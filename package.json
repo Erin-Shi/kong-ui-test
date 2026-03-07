@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:ci": "cypress run --reporter junit --reporter-options mochaFile=results/junit-[hash].xml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cypress": "^15.11.0"
+    "cypress": "^15.11.0",
+    "@shelex/cypress-allure-plugin": "^2.38.0"
   }
 }
