@@ -74,24 +74,42 @@ jobs:
           # preserve exit code for the job
           exit $ec
 
-      - name: Generate Allure report (download CLI and run)
+      - name: Prepare Allure results and generate report
         run: |
           if [ -d "allure-results" ]; then
-            echo "Generating Allure report using downloaded Allure binary"
+            echo "Preparing Allure results and generating report"
             # Ensure Java runtime available for Allure and tools to extract tarball
             sudo apt-get update
             sudo apt-get install -y openjdk-11-jre-headless curl tar unzip
 
+            # Create a cleaned results directory that contains only JSON files expected by Allure
+            FILTERED_DIR=./allure-results-filtered
+            rm -rf "$FILTERED_DIR"
+            mkdir -p "$FILTERED_DIR"
+
+            # Copy only JSON files (container-*.json, *-result.json, executor.json, history*, attachments)
+            shopt -s nullglob || true
+            for f in allure-results/*.json; do
+              cp "$f" "$FILTERED_DIR/"
+            done
+            # Also copy attachments directory if present
+            if [ -d "allure-results/attachments" ]; then
+              mkdir -p "$FILTERED_DIR/attachments"
+              cp -r allure-results/attachments/* "$FILTERED_DIR/attachments/" || true
+            fi
+
+            echo "Filtered files:" && ls -la "$FILTERED_DIR" || true
+
+            # Download Allure binary and run generator on filtered dir
             ALLURE_VERSION=2.13.9
             ARCHIVE_URL="https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz"
-
             mkdir -p /opt/allure
             curl -sSL ${ARCHIVE_URL} -o /tmp/allure.tgz
             tar -xzf /tmp/allure.tgz -C /opt/allure --strip-components=1
             export PATH="/opt/allure/bin:$PATH"
 
             echo "Allure version: $(/opt/allure/bin/allure --version)"
-            /opt/allure/bin/allure generate ./allure-results -o ./allure-report --clean || true
+            /opt/allure/bin/allure generate "$FILTERED_DIR" -o ./allure-report --clean || true
           else
             echo "No allure-results directory found, skipping report generation"
           fi
@@ -125,6 +143,13 @@ jobs:
         with:
           name: cypress-run-log
           path: cypress_run_ci.log
+
+      - name: Upload Allure raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       - name: Comment on PR if tests failed
         if: ${{ failure() && github.event_name == 'pull_request' }}
