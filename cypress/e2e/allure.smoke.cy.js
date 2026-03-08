@@ -11,11 +11,6 @@ describe('Allure Smoke Test', () => {
     // log to runner console
     cy.log('allure smoke test running');
 
-    // write a valid minimal allure result set so the report generator has something to render
-    cy.task('writeValidAllureResult').then(res => {
-      cy.log('writeValidAllureResult result: ' + JSON.stringify(res));
-    });
-
     // then list contents of allure-results directory so we can assert
     cy.task('listAllureResults').then(files => {
       cy.log('allure-results dir listing: ' + JSON.stringify(files));
