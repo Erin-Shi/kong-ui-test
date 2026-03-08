@@ -1,12 +1,12 @@
 {
-  "uid" : "68413845bde49faa",
-  "name" : "validates URL with spaces or control characters",
-  "fullName" : "Services Management - Validation Flows validates URL with spaces or control characters",
-  "historyId" : "uid-1772956674031-24",
+  "uid" : "af47af1167359adb",
+  "name" : "deletes a service from its detail view",
+  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
+  "historyId" : "uid-1772957225099-59",
   "time" : {
-    "start" : 1772956663644,
-    "stop" : 1772956674031,
-    "duration" : 10387
+    "start" : 1772957214678,
+    "stop" : 1772957225099,
+    "duration" : 10421
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "68413845bde49faa.json",
+  "source" : "af47af1167359adb.json",
   "parameterValues" : [ ]
 }

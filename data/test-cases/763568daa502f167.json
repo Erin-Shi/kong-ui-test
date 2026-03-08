@@ -1,12 +1,12 @@
 {
-  "uid" : "99300c14556d17a0",
-  "name" : "shows validation when required fields missing",
-  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
-  "historyId" : "uid-1772956630495-608",
+  "uid" : "763568daa502f167",
+  "name" : "deletes a service from its detail view",
+  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
+  "historyId" : "uid-1772957372166-543",
   "time" : {
-    "start" : 1772956620160,
-    "stop" : 1772956630495,
-    "duration" : 10335
+    "start" : 1772957361781,
+    "stop" : 1772957372166,
+    "duration" : 10385
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "99300c14556d17a0.json",
+  "source" : "763568daa502f167.json",
   "parameterValues" : [ ]
 }

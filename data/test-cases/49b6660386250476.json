@@ -1,12 +1,12 @@
 {
-  "uid" : "ac021ef6bbc9cebe",
-  "name" : "deletes a route from route list in overview page",
-  "fullName" : "Routes Management - Normal Flows deletes a route from route list in overview page",
-  "historyId" : "uid-1772956550430-621",
+  "uid" : "49b6660386250476",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
+  "historyId" : "uid-1772957246837-800",
   "time" : {
-    "start" : 1772956539981,
-    "stop" : 1772956550430,
-    "duration" : 10449
+    "start" : 1772957236462,
+    "stop" : 1772957246837,
+    "duration" : 10375
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "ac021ef6bbc9cebe.json",
+  "source" : "49b6660386250476.json",
   "parameterValues" : [ ]
 }

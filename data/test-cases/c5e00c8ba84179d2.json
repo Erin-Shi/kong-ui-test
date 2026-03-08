@@ -1,12 +1,12 @@
 {
-  "uid" : "93f942b124fb1389",
-  "name" : "prevents duplicate route creation",
-  "fullName" : "Routes Management - Error Flows prevents duplicate route creation",
-  "historyId" : "uid-1772956504444-478",
+  "uid" : "c5e00c8ba84179d2",
+  "name" : "creates a new route and shows it in the list",
+  "fullName" : "Routes Management - Normal Flows creates a new route and shows it in the list",
+  "historyId" : "uid-1772957143873-562",
   "time" : {
-    "start" : 1772956494075,
-    "stop" : 1772956504444,
-    "duration" : 10369
+    "start" : 1772957132665,
+    "stop" : 1772957143873,
+    "duration" : 11208
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "93f942b124fb1389.json",
+  "source" : "c5e00c8ba84179d2.json",
   "parameterValues" : [ ]
 }

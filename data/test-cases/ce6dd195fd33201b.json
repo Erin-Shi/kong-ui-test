@@ -1,12 +1,12 @@
 {
-  "uid" : "b237493d02fbefd9",
-  "name" : "creates a new service and shows it in the list",
-  "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
-  "historyId" : "uid-1772956721965-596",
+  "uid" : "ce6dd195fd33201b",
+  "name" : "shows validation when required fields missing",
+  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
+  "historyId" : "uid-1772957257710-986",
   "time" : {
-    "start" : 1772956710899,
-    "stop" : 1772956721966,
-    "duration" : 11067
+    "start" : 1772957247308,
+    "stop" : 1772957257710,
+    "duration" : 10402
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "b237493d02fbefd9.json",
+  "source" : "ce6dd195fd33201b.json",
   "parameterValues" : [ ]
 }

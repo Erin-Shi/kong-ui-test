@@ -1,12 +1,12 @@
 {
-  "uid" : "99b2fde5a3bdc73f",
-  "name" : "prevents deleting a service that has associated routes",
-  "fullName" : "Services Management - Error Flows prevents deleting a service that has associated routes",
-  "historyId" : "uid-1772956652201-827",
+  "uid" : "13eeffac12d6b1e6",
+  "name" : "deletes a route from route list in overview page",
+  "fullName" : "Routes Management - Normal Flows deletes a route from route list in overview page",
+  "historyId" : "uid-1772957176651-774",
   "time" : {
-    "start" : 1772956641839,
-    "stop" : 1772956652201,
-    "duration" : 10362
+    "start" : 1772957166226,
+    "stop" : 1772957176651,
+    "duration" : 10425
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "99b2fde5a3bdc73f.json",
+  "source" : "13eeffac12d6b1e6.json",
   "parameterValues" : [ ]
 }

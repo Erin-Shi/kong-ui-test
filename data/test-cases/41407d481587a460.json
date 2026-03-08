@@ -1,14 +1,14 @@
 {
-  "uid" : "471471098eea4c8d",
-  "name" : "shows validation when required fields missing",
-  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
-  "historyId" : "uid-1772956687404-964",
+  "uid" : "41407d481587a460",
+  "name" : "generates allure-results artifacts",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts",
+  "historyId" : "uid-1772957105393-714",
   "time" : {
-    "start" : 1772956676384,
-    "stop" : 1772956687404,
-    "duration" : 11020
+    "start" : 1772957105262,
+    "stop" : 1772957105393,
+    "duration" : 131
   },
-  "status" : "failed",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,13 +30,9 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "471471098eea4c8d.json",
+  "source" : "41407d481587a460.json",
   "parameterValues" : [ ]
 }

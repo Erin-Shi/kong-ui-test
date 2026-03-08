@@ -1,12 +1,12 @@
 {
-  "uid" : "ef4a17b01c78da33",
-  "name" : "creates a new route via service details page",
-  "fullName" : "Routes Management - Normal Flows creates a new route via service details page",
-  "historyId" : "uid-1772956539491-84",
+  "uid" : "a606615bc99daf31",
+  "name" : "displays service details correctly after creation",
+  "fullName" : "Services Management - Normal Flows displays service details correctly after creation",
+  "historyId" : "uid-1772957361369-352",
   "time" : {
-    "start" : 1772956528886,
-    "stop" : 1772956539491,
-    "duration" : 10605
+    "start" : 1772957350979,
+    "stop" : 1772957361369,
+    "duration" : 10390
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "ef4a17b01c78da33.json",
+  "source" : "a606615bc99daf31.json",
   "parameterValues" : [ ]
 }
