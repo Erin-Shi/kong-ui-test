@@ -60,6 +60,9 @@ jobs:
           exit 1
 
       - name: Run Cypress tests (JUnit + Allure)
+        env:
+          TERM: xterm
+          CI: true
         run: npm run cypress:run:ci
 
       - name: Generate Allure report (using npx allure-commandline)
