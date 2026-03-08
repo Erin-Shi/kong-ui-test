@@ -167,7 +167,6 @@ module.exports = defineConfig({
               steps: [],
               attachments: [],
               labels: [{ name: 'framework', value: 'cypress' }, { name: 'generatedBy', value: 'fallback' }],
-              _generatedBy: 'fallback',
               start: Date.now() - (data.duration || 0),
               stop: Date.now()
             }
