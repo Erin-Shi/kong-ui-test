@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:run:ci": "cypress run --reporter junit --reporter-options mochaFile=results/junit-[hash].xml"
+    "cypress:run:ci": "cypress run --reporter junit --reporter-options mochaFile=results/junit-[hash].xml",
+    "allure:generate": "npx -p allure-commandline allure generate ./allure-results -o ./allure-report --clean",
+    "allure:open": "npx -p allure-commandline allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
