@@ -9,6 +9,9 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    # Ensure TERM is set so programs that call `tput` don't fail in non-interactive shells
+    env:
+      TERM: xterm
 
     steps:
       - name: Checkout
