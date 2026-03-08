@@ -1,0 +1,38 @@
+{
+  "uid" : "dbb221e28962a4e7",
+  "name" : "displays route details correctly after creation",
+  "fullName" : "Routes Management - Normal Flows displays route details correctly after creation",
+  "historyId" : "uid-1772948853647-492",
+  "time" : {
+    "start" : 1772948851786,
+    "stop" : 1772948853647,
+    "duration" : 1861
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dbb221e28962a4e7.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,38 @@
+{
+  "uid" : "dac725d7df15b5a0",
+  "name" : "prevents duplicate service creation",
+  "fullName" : "Services Management - Error Flows prevents duplicate service creation",
+  "historyId" : "uid-1772948949128-526",
+  "time" : {
+    "start" : 1772948945831,
+    "stop" : 1772948949128,
+    "duration" : 3297
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dac725d7df15b5a0.json",
+  "parameterValues" : [ ]
+}

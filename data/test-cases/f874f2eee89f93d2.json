@@ -1,0 +1,42 @@
+{
+  "uid" : "f874f2eee89f93d2",
+  "name" : "warns or sanitizes forbidden characters in service name",
+  "fullName" : "Services Management - Validation Flows warns or sanitizes forbidden characters in service name",
+  "historyId" : "uid-1772949001058-232",
+  "time" : {
+    "start" : 1772948999712,
+    "stop" : 1772949001058,
+    "duration" : 1346
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f874f2eee89f93d2.json",
+  "parameterValues" : [ ]
+}

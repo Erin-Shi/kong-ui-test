@@ -1,295 +1,425 @@
 [ {
-  "uid" : "2466e4e495605dc4",
-  "name" : "cancels add service operation without creating",
+  "uid" : "b9fc881fe45d6048",
+  "name" : "prevents deleting a service that has associated routes",
   "time" : {
-    "start" : 1772957372608,
-    "stop" : 1772957382964,
-    "duration" : 10356
+    "start" : 1772948950018,
+    "stop" : 1772948962039,
+    "duration" : 12021
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "1055f48ad84144f6",
-  "name" : "cancels add route operation without creating",
-  "time" : {
-    "start" : 1772957177086,
-    "stop" : 1772957187517,
-    "duration" : 10431
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "fc37b37df798437d",
-  "name" : "creates a new service and shows it in the list",
-  "time" : {
-    "start" : 1772957192258,
-    "stop" : 1772957203438,
-    "duration" : 11180
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "763568daa502f167",
-  "name" : "deletes a service from its detail view",
-  "time" : {
-    "start" : 1772957361781,
-    "stop" : 1772957372166,
-    "duration" : 10385
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "83ae922221cc7cad",
-  "name" : "displays route details correctly after creation",
-  "time" : {
-    "start" : 1772957144281,
-    "stop" : 1772957154679,
-    "duration" : 10398
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "768f477519dee3d5",
-  "name" : "shows validation when required fields missing",
-  "time" : {
-    "start" : 1772957304344,
-    "stop" : 1772957315502,
-    "duration" : 11158
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "9dad021bb167a33b",
-  "name" : "creates a new service and shows it in the list",
-  "time" : {
-    "start" : 1772957339349,
-    "stop" : 1772957350527,
-    "duration" : 11178
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "49b6660386250476",
-  "name" : "creates a service with both name and tags empty and receives auto-generated name",
-  "time" : {
-    "start" : 1772957236462,
-    "stop" : 1772957246837,
-    "duration" : 10375
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "33516a8cb1443dcb",
-  "name" : "validates URL with spaces or control characters",
-  "time" : {
-    "start" : 1772957291290,
-    "stop" : 1772957301720,
-    "duration" : 10430
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f94bd27dc4209d46",
-  "name" : "creates a new route via service details page",
-  "time" : {
-    "start" : 1772957155103,
-    "stop" : 1772957165786,
-    "duration" : 10683
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "96ba8be7dfaa8392",
+  "uid" : "f874f2eee89f93d2",
   "name" : "warns or sanitizes forbidden characters in service name",
   "time" : {
-    "start" : 1772957280287,
-    "stop" : 1772957290696,
-    "duration" : 10409
+    "start" : 1772948999712,
+    "stop" : 1772949001058,
+    "duration" : 1346
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "83d9d3f357709dbd",
-  "name" : "displays service details correctly after creation",
+  "uid" : "d67d31d6257cc22c",
+  "name" : "validates URL with spaces or control characters",
   "time" : {
-    "start" : 1772957203868,
-    "stop" : 1772957214256,
+    "start" : 1772948942210,
+    "stop" : 1772948943249,
+    "duration" : 1039
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a82709e8d0784da",
+  "name" : "cancels add route operation without creating",
+  "time" : {
+    "start" : 1772957675138,
+    "stop" : 1772957685541,
+    "duration" : 10403
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a4de11338cde190",
+  "name" : "generates allure-results artifacts",
+  "time" : {
+    "start" : 1772948838883,
+    "stop" : 1772948838945,
+    "duration" : 62
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8436c83450a9af97",
+  "name" : "prevents duplicate service creation",
+  "time" : {
+    "start" : 1772957814489,
+    "stop" : 1772957824863,
+    "duration" : 10374
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c80de4677d8e90a7",
+  "name" : "creates a new route and shows it in the list",
+  "time" : {
+    "start" : 1772957630405,
+    "stop" : 1772957641631,
+    "duration" : 11226
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bff30edc14313489",
+  "name" : "creates a new route and shows it in the list",
+  "time" : {
+    "start" : 1772948849374,
+    "stop" : 1772948851370,
+    "duration" : 1996
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d5998c1ce49a4b8",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772957745524,
+    "stop" : 1772957755912,
     "duration" : 10388
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "fafd8cc173f8ac24",
-  "name" : "prevents deleting a service that has associated routes",
+  "uid" : "dbb221e28962a4e7",
+  "name" : "displays route details correctly after creation",
   "time" : {
-    "start" : 1772957269281,
-    "stop" : 1772957279703,
-    "duration" : 10422
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "ce6dd195fd33201b",
-  "name" : "shows validation when required fields missing",
-  "time" : {
-    "start" : 1772957247308,
-    "stop" : 1772957257710,
-    "duration" : 10402
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "d6cad98cc1db05",
-  "name" : "creates a service with both name and tags empty and receives auto-generated name",
-  "time" : {
-    "start" : 1772957383445,
-    "stop" : 1772957393809,
-    "duration" : 10364
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "aabb2f249c5a024c",
-  "name" : "prevents duplicate service creation",
-  "time" : {
-    "start" : 1772957315966,
-    "stop" : 1772957326341,
-    "duration" : 10375
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "7650e2a8223bce17",
-  "name" : "validates URL with spaces or control characters",
-  "time" : {
-    "start" : 1772957407776,
-    "stop" : 1772957418154,
-    "duration" : 10378
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "af47af1167359adb",
-  "name" : "deletes a service from its detail view",
-  "time" : {
-    "start" : 1772957214678,
-    "stop" : 1772957225099,
-    "duration" : 10421
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "38d80fe46976a6fa",
-  "name" : "cancels add service operation without creating",
-  "time" : {
-    "start" : 1772957225642,
-    "stop" : 1772957236019,
-    "duration" : 10377
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "62a3b925f4aef53d",
-  "name" : "warns or sanitizes forbidden characters in service name",
-  "time" : {
-    "start" : 1772957396213,
-    "stop" : 1772957407357,
-    "duration" : 11144
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "9af8f634925460cf",
-  "name" : "prevents duplicate route creation",
-  "time" : {
-    "start" : 1772957119866,
-    "stop" : 1772957130280,
-    "duration" : 10414
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "c5e00c8ba84179d2",
-  "name" : "creates a new route and shows it in the list",
-  "time" : {
-    "start" : 1772957132665,
-    "stop" : 1772957143873,
-    "duration" : 11208
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "13eeffac12d6b1e6",
-  "name" : "deletes a route from route list in overview page",
-  "time" : {
-    "start" : 1772957166226,
-    "stop" : 1772957176651,
-    "duration" : 10425
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "a606615bc99daf31",
-  "name" : "displays service details correctly after creation",
-  "time" : {
-    "start" : 1772957350979,
-    "stop" : 1772957361369,
-    "duration" : 10390
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "e5d5896f2e93972b",
-  "name" : "smoke-test-valid",
-  "time" : {
-    "start" : 1772957105334,
-    "stop" : 1772957105335,
-    "duration" : 1
+    "start" : 1772948851786,
+    "stop" : 1772948853647,
+    "duration" : 1861
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c5872ede9ca2ecc9",
-  "name" : "prevents deleting a service that has associated routes",
+  "uid" : "b087645a8ffd96e0",
+  "name" : "cancels add service operation without creating",
   "time" : {
-    "start" : 1772957326743,
-    "stop" : 1772957337111,
-    "duration" : 10368
+    "start" : 1772948993181,
+    "stop" : 1772948994829,
+    "duration" : 1648
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efb8be929949ec09",
+  "name" : "deletes a service from its detail view",
+  "time" : {
+    "start" : 1772957712856,
+    "stop" : 1772957723221,
+    "duration" : 10365
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "7179f37830c414f6",
+  "uid" : "e92e7655fd803a09",
+  "name" : "cancels add service operation without creating",
+  "time" : {
+    "start" : 1772948913495,
+    "stop" : 1772948915037,
+    "duration" : 1542
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "893ae2695267c690",
+  "name" : "deletes a service from its detail view",
+  "time" : {
+    "start" : 1772948900065,
+    "stop" : 1772948913116,
+    "duration" : 13051
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "90609959d2e678dd",
+  "name" : "creates a new service and shows it in the list",
+  "time" : {
+    "start" : 1772948884206,
+    "stop" : 1772948886632,
+    "duration" : 2426
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6a408c567f061d1",
+  "name" : "prevents deleting a service that has associated routes",
+  "time" : {
+    "start" : 1772948925237,
+    "stop" : 1772948938523,
+    "duration" : 13286
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7aaefc6bb6edd8e1",
+  "name" : "deletes a route from route list in overview page",
+  "time" : {
+    "start" : 1772948872808,
+    "stop" : 1772948879481,
+    "duration" : 6673
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d7f9f66ac4e9f08",
+  "name" : "displays service details correctly after creation",
+  "time" : {
+    "start" : 1772957701944,
+    "stop" : 1772957712329,
+    "duration" : 10385
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9277136212ae7d02",
+  "name" : "deletes a service from its detail view",
+  "time" : {
+    "start" : 1772948979163,
+    "stop" : 1772948992953,
+    "duration" : 13790
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "922007192d9b52f7",
+  "name" : "displays service details correctly after creation",
+  "time" : {
+    "start" : 1772948966620,
+    "stop" : 1772948978422,
+    "duration" : 11802
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b45e51a588ee7084",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "time" : {
+    "start" : 1772948995302,
+    "stop" : 1772948998314,
+    "duration" : 3012
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba58c1087d860dd",
+  "name" : "creates a new service and shows it in the list",
+  "time" : {
+    "start" : 1772957838029,
+    "stop" : 1772957849208,
+    "duration" : 11179
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ad289c88bbb1375",
+  "name" : "creates a new route via service details page",
+  "time" : {
+    "start" : 1772948854283,
+    "stop" : 1772948872451,
+    "duration" : 18168
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa11d16e68b73e1d",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "time" : {
+    "start" : 1772957734557,
+    "stop" : 1772957744912,
+    "duration" : 10355
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f962e268ecf45f0",
+  "name" : "cancels add service operation without creating",
+  "time" : {
+    "start" : 1772957723685,
+    "stop" : 1772957734073,
+    "duration" : 10388
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fd543c94c6ea555",
+  "name" : "creates a new service and shows it in the list",
+  "time" : {
+    "start" : 1772948963372,
+    "stop" : 1772948965760,
+    "duration" : 2388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e221bda8e6519a9",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "time" : {
+    "start" : 1772957882254,
+    "stop" : 1772957892642,
+    "duration" : 10388
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3758da8e791ea38",
+  "name" : "warns or sanitizes forbidden characters in service name",
+  "time" : {
+    "start" : 1772957778734,
+    "stop" : 1772957789308,
+    "duration" : 10574
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8563d6888158a960",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "time" : {
+    "start" : 1772948915439,
+    "stop" : 1772948918202,
+    "duration" : 2763
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11aa367f5acde3f8",
   "name" : "prevents duplicate service creation",
   "time" : {
-    "start" : 1772957258230,
-    "stop" : 1772957268640,
+    "start" : 1772948919279,
+    "stop" : 1772948924602,
+    "duration" : 5323
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f483b65f86106f22",
+  "name" : "prevents deleting a service that has associated routes",
+  "time" : {
+    "start" : 1772957825314,
+    "stop" : 1772957835669,
+    "duration" : 10355
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a44b8decebc9ec6b",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772948944532,
+    "stop" : 1772948945319,
+    "duration" : 787
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c47a4a0f3c60c11",
+  "name" : "creates a new route via service details page",
+  "time" : {
+    "start" : 1772957652886,
+    "stop" : 1772957663558,
+    "duration" : 10672
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3577bd595b59bfb0",
+  "name" : "displays service details correctly after creation",
+  "time" : {
+    "start" : 1772948887173,
+    "stop" : 1772948899069,
+    "duration" : 11896
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "51931d8e2e681203",
+  "name" : "deletes a route from route list in overview page",
+  "time" : {
+    "start" : 1772957664084,
+    "stop" : 1772957674581,
+    "duration" : 10497
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "dac725d7df15b5a0",
+  "name" : "prevents duplicate service creation",
+  "time" : {
+    "start" : 1772948945831,
+    "stop" : 1772948949128,
+    "duration" : 3297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13dee595a25f887b",
+  "name" : "prevents duplicate route creation",
+  "time" : {
+    "start" : 1772948841841,
+    "stop" : 1772948848038,
+    "duration" : 6197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "892bf6f3354fdbe0",
+  "name" : "prevents deleting a service that has associated routes",
+  "time" : {
+    "start" : 1772957767638,
+    "stop" : 1772957778048,
     "duration" : 10410
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "41407d481587a460",
-  "name" : "generates allure-results artifacts",
+  "uid" : "ae9ecfcbdac7b4c2",
+  "name" : "displays service details correctly after creation",
   "time" : {
-    "start" : 1772957105262,
-    "stop" : 1772957105393,
-    "duration" : 131
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "72c11deb4f0241bc",
-  "name" : "shows validation when required fields missing",
-  "time" : {
-    "start" : 1772957107704,
-    "stop" : 1772957119416,
-    "duration" : 11712
+    "start" : 1772957849619,
+    "stop" : 1772957860004,
+    "duration" : 10385
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "4bee23c2d734d1b5",
+  "uid" : "cf8ee0ffc9d7cfa8",
+  "name" : "cancels add service operation without creating",
+  "time" : {
+    "start" : 1772957871412,
+    "stop" : 1772957881771,
+    "duration" : 10359
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba79cf0c2cb1c1be",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772957605126,
+    "stop" : 1772957617064,
+    "duration" : 11938
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e2da64d987b8177",
+  "name" : "smoke-test-valid",
+  "time" : {
+    "start" : 1772957602855,
+    "stop" : 1772957602856,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c0f4d27a9d8da60",
   "name" : "smoke-test-valid",
   "time" : {
     "start" : 1772948838923,
@@ -297,5 +427,155 @@
     "duration" : 1
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8e15bcf888cb2e",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772948840124,
+    "stop" : 1772948841470,
+    "duration" : 1346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9675f2381f4cce5",
+  "name" : "validates URL with spaces or control characters",
+  "time" : {
+    "start" : 1772957906614,
+    "stop" : 1772957917029,
+    "duration" : 10415
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "121a0739784e3b23",
+  "name" : "generates allure-results artifacts",
+  "time" : {
+    "start" : 1772957602673,
+    "stop" : 1772957602917,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44da72630a3cadd4",
+  "name" : "validates URL with spaces or control characters",
+  "time" : {
+    "start" : 1772957789927,
+    "stop" : 1772957800356,
+    "duration" : 10429
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "dba8d9bf450388a7",
+  "name" : "validates URL with spaces or control characters",
+  "time" : {
+    "start" : 1772949001400,
+    "stop" : 1772949002443,
+    "duration" : 1043
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "875574a7872ac022",
+  "name" : "warns or sanitizes forbidden characters in service name",
+  "time" : {
+    "start" : 1772948938954,
+    "stop" : 1772948941771,
+    "duration" : 2817
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "950e022585a2615f",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772948918517,
+    "stop" : 1772948918898,
+    "duration" : 381
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f481256ad463655c",
+  "name" : "prevents duplicate service creation",
+  "time" : {
+    "start" : 1772957756503,
+    "stop" : 1772957767078,
+    "duration" : 10575
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec9f77f1b71698d4",
+  "name" : "warns or sanitizes forbidden characters in service name",
+  "time" : {
+    "start" : 1772957894976,
+    "stop" : 1772957906112,
+    "duration" : 11136
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "62fc50324bc96985",
+  "name" : "cancels add route operation without creating",
+  "time" : {
+    "start" : 1772948879713,
+    "stop" : 1772948880967,
+    "duration" : 1254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e6d9d615540919c",
+  "name" : "deletes a service from its detail view",
+  "time" : {
+    "start" : 1772957860469,
+    "stop" : 1772957870973,
+    "duration" : 10504
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e414e9acc4a4133c",
+  "name" : "creates a new service and shows it in the list",
+  "time" : {
+    "start" : 1772957690282,
+    "stop" : 1772957701524,
+    "duration" : 11242
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "452940b631ac2369",
+  "name" : "displays route details correctly after creation",
+  "time" : {
+    "start" : 1772957642044,
+    "stop" : 1772957652426,
+    "duration" : 10382
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bb9064bfd07daa4",
+  "name" : "prevents duplicate route creation",
+  "time" : {
+    "start" : 1772957617564,
+    "stop" : 1772957627948,
+    "duration" : 10384
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4ece1a1cf80db84",
+  "name" : "shows validation when required fields missing",
+  "time" : {
+    "start" : 1772957802941,
+    "stop" : 1772957814083,
+    "duration" : 11142
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]
