@@ -1,0 +1,38 @@
+{
+  "uid" : "afc5128a26f50686",
+  "name" : "creates a new route and shows it in the list",
+  "fullName" : "Routes Management - Normal Flows creates a new route and shows it in the list",
+  "historyId" : "uid-1772948851370-73",
+  "time" : {
+    "start" : 1772948849374,
+    "stop" : 1772948851370,
+    "duration" : 1996
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "afc5128a26f50686.json",
+  "parameterValues" : [ ]
+}

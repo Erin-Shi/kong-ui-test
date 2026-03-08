@@ -1,0 +1,38 @@
+{
+  "uid" : "a6c06c5fb1779601",
+  "name" : "cancels add route operation without creating",
+  "fullName" : "Routes Management - Normal Flows cancels add route operation without creating",
+  "historyId" : "uid-1772948880967-494",
+  "time" : {
+    "start" : 1772948879713,
+    "stop" : 1772948880967,
+    "duration" : 1254
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a6c06c5fb1779601.json",
+  "parameterValues" : [ ]
+}
