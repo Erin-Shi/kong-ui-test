@@ -25,14 +25,17 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Install Docker Compose plugin
+      - name: Install docker-compose (pip)
         run: |
           sudo apt-get update
-          sudo apt-get install -y docker-compose-plugin
+          sudo apt-get install -y python3-pip
+          pip3 install --user docker-compose
+          # put user pip bin on PATH for current session
+          echo "::add-path::$HOME/.local/bin"
 
-      - name: Start application via docker compose
+      - name: Start application via docker-compose
         run: |
-          docker compose -f docker-compose.yaml up -d --build
+          $HOME/.local/bin/docker-compose -f docker-compose.yaml up -d --build
 
       - name: Wait for application to be ready
         # Simple wait ¡ª adjust healthcheck/waiting logic as needed for your app
