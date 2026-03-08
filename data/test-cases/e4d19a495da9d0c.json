@@ -1,12 +1,12 @@
 {
-  "uid" : "f4d9dda7d334bf1d",
-  "name" : "prevents duplicate service creation",
-  "fullName" : "Services Management - Error Flows prevents duplicate service creation",
-  "historyId" : "uid-1772948924602-276",
+  "uid" : "e4d19a495da9d0c",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
+  "historyId" : "uid-1772948918202-676",
   "time" : {
-    "start" : 1772948919279,
-    "stop" : 1772948924602,
-    "duration" : 5323
+    "start" : 1772948915439,
+    "stop" : 1772948918202,
+    "duration" : 2763
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f4d9dda7d334bf1d.json",
+  "source" : "e4d19a495da9d0c.json",
   "parameterValues" : [ ]
 }

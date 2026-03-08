@@ -1,5 +1,5 @@
 {
-  "uid" : "5326d83ae1765c7f",
+  "uid" : "97921cf9ed537939",
   "name" : "creates a new service and shows it in the list",
   "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
   "historyId" : "uid-1772948886632-960",
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5326d83ae1765c7f.json",
+  "source" : "97921cf9ed537939.json",
   "parameterValues" : [ ]
 }

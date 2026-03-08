@@ -1,12 +1,12 @@
 {
-  "uid" : "5f722f58458c3e50",
-  "name" : "deletes a route from route list in overview page",
-  "fullName" : "Routes Management - Normal Flows deletes a route from route list in overview page",
-  "historyId" : "uid-1772948879481-778",
+  "uid" : "da813f49663c7711",
+  "name" : "smoke-test-valid",
+  "fullName" : "Allure Smoke Test.smoke-test-valid",
+  "historyId" : "uid-1772948838922-861",
   "time" : {
-    "start" : 1772948872808,
-    "stop" : 1772948879481,
-    "duration" : 6673
+    "start" : 1772948838923,
+    "stop" : 1772948838924,
+    "duration" : 1
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,9 +16,6 @@
   "labels" : [ {
     "name" : "framework",
     "value" : "cypress"
-  }, {
-    "name" : "generatedBy",
-    "value" : "fallback"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -33,6 +30,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5f722f58458c3e50.json",
+  "source" : "da813f49663c7711.json",
   "parameterValues" : [ ]
 }

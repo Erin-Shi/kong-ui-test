@@ -1,12 +1,12 @@
 {
-  "uid" : "a4160fcbabd96099",
-  "name" : "cancels add service operation without creating",
-  "fullName" : "Services Management - Normal Flows cancels add service operation without creating",
-  "historyId" : "uid-1772948915037-352",
+  "uid" : "f3281aea834a4df",
+  "name" : "generates allure-results artifacts",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts",
+  "historyId" : "uid-1772948838945-706",
   "time" : {
-    "start" : 1772948913495,
-    "stop" : 1772948915037,
-    "duration" : 1542
+    "start" : 1772948838883,
+    "stop" : 1772948838945,
+    "duration" : 62
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a4160fcbabd96099.json",
+  "source" : "f3281aea834a4df.json",
   "parameterValues" : [ ]
 }

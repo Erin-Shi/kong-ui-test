@@ -1,12 +1,12 @@
 {
-  "uid" : "dead1a2e4405e346",
-  "name" : "creates a service with both name and tags empty and receives auto-generated name",
-  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
-  "historyId" : "uid-1772948918202-676",
+  "uid" : "397606299fb00427",
+  "name" : "shows validation when required fields missing",
+  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
+  "historyId" : "uid-1772948945319-116",
   "time" : {
-    "start" : 1772948915439,
-    "stop" : 1772948918202,
-    "duration" : 2763
+    "start" : 1772948944532,
+    "stop" : 1772948945319,
+    "duration" : 787
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "dead1a2e4405e346.json",
+  "source" : "397606299fb00427.json",
   "parameterValues" : [ ]
 }

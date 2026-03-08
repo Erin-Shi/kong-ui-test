@@ -1,14 +1,14 @@
 {
-  "uid" : "c9b5ca5be13655fb",
-  "name" : "shows validation when required fields missing",
-  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
-  "historyId" : "uid-1772948918898-830",
+  "uid" : "f5229c6097d03764",
+  "name" : "creates a new route via service details page",
+  "fullName" : "Routes Management - Normal Flows creates a new route via service details page",
+  "historyId" : "uid-1772948872451-854",
   "time" : {
-    "start" : 1772948918517,
-    "stop" : 1772948918898,
-    "duration" : 381
+    "start" : 1772948854283,
+    "stop" : 1772948872451,
+    "duration" : 18168
   },
-  "status" : "passed",
+  "status" : "failed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,9 +30,13 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "c9b5ca5be13655fb.json",
+  "source" : "f5229c6097d03764.json",
   "parameterValues" : [ ]
 }
