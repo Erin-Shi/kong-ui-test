@@ -1,0 +1,42 @@
+{
+  "uid" : "6e17c68be00a01aa",
+  "name" : "cancels add service operation without creating",
+  "fullName" : "Services Management - Normal Flows cancels add service operation without creating",
+  "historyId" : "uid-1772956754145-374",
+  "time" : {
+    "start" : 1772956743810,
+    "stop" : 1772956754145,
+    "duration" : 10335
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6e17c68be00a01aa.json",
+  "parameterValues" : [ ]
+}

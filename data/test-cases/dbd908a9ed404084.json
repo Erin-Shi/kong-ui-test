@@ -1,12 +1,12 @@
 {
-  "uid" : "42d0fb77bc2d41a4",
-  "name" : "smoke-test-valid",
-  "fullName" : "Allure Smoke Test.smoke-test-valid",
-  "historyId" : "uid-1772948838922-861",
+  "uid" : "dbd908a9ed404084",
+  "name" : "generates allure-results artifacts",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts",
+  "historyId" : "uid-1772956480115-504",
   "time" : {
-    "start" : 1772948838923,
-    "stop" : 1772948838924,
-    "duration" : 1
+    "start" : 1772956480009,
+    "stop" : 1772956480115,
+    "duration" : 106
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,6 +16,9 @@
   "labels" : [ {
     "name" : "framework",
     "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -30,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "42d0fb77bc2d41a4.json",
+  "source" : "dbd908a9ed404084.json",
   "parameterValues" : [ ]
 }

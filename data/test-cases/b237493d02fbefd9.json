@@ -1,0 +1,42 @@
+{
+  "uid" : "b237493d02fbefd9",
+  "name" : "creates a new service and shows it in the list",
+  "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
+  "historyId" : "uid-1772956721965-596",
+  "time" : {
+    "start" : 1772956710899,
+    "stop" : 1772956721966,
+    "duration" : 11067
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b237493d02fbefd9.json",
+  "parameterValues" : [ ]
+}

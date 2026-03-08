@@ -1,0 +1,42 @@
+{
+  "uid" : "92044cd42f525554",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
+  "historyId" : "uid-1772956619702-117",
+  "time" : {
+    "start" : 1772956609359,
+    "stop" : 1772956619702,
+    "duration" : 10343
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "92044cd42f525554.json",
+  "parameterValues" : [ ]
+}

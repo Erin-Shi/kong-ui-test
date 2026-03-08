@@ -1,0 +1,42 @@
+{
+  "uid" : "ef4a17b01c78da33",
+  "name" : "creates a new route via service details page",
+  "fullName" : "Routes Management - Normal Flows creates a new route via service details page",
+  "historyId" : "uid-1772956539491-84",
+  "time" : {
+    "start" : 1772956528886,
+    "stop" : 1772956539491,
+    "duration" : 10605
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ef4a17b01c78da33.json",
+  "parameterValues" : [ ]
+}
