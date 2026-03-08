@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="33.491" tests="5" failures="2">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:02:30" tests="0" file="cypress\e2e\service.normal.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Services Management - Normal Flows" timestamp="2026-03-08T02:02:30" tests="5" time="33.487" failures="2">
+    <testcase name="Services Management - Normal Flows creates a new service and shows it in the list" time="2.108" classname="creates a new service and shows it in the list">
+    </testcase>
+    <testcase name="Services Management - Normal Flows displays service details correctly after creation" time="0.000" classname="displays service details correctly after creation">
+      <failure message="Timed out retrying after 10000ms: expected &apos;&lt;tr&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;tr&gt;` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 10000ms: expected '<tr>' to be 'visible'
+
+This element `<tr>` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?
+    at Object.clickByTestId (webpack://kong-ui-test/./cypress/support/utils/elementUtils.js:11:28)
+    at ServicesOverviewPage.selectService (webpack://kong-ui-test/./cypress/support/pages/ServicesOverviewPage.js:11:21)
+    at Context.eval (webpack://kong-ui-test/./cypress/e2e/service.normal.cy.js:25:25)]]></failure>
+    </testcase>
+    <testcase name="Services Management - Normal Flows deletes a service from its detail view" time="0.000" classname="deletes a service from its detail view">
+      <failure message="Timed out retrying after 10000ms: expected &apos;&lt;button.k-button.small.tertiary.icon-button.actions-dropdown-trigger&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;button.k-button.small.tertiary.icon-button.actions-dropdown-trigger&gt;` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 10000ms: expected '<button.k-button.small.tertiary.icon-button.actions-dropdown-trigger>' to be 'visible'
+
+This element `<button.k-button.small.tertiary.icon-button.actions-dropdown-trigger>` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?
+    at Object.click (webpack://kong-ui-test/./cypress/support/utils/elementUtils.js:16:28)
+    at ServicesOverviewPage.deleteService (webpack://kong-ui-test/./cypress/support/pages/ServicesOverviewPage.js:28:21)
+    at Context.eval (webpack://kong-ui-test/./cypress/e2e/service.normal.cy.js:37:25)]]></failure>
+    </testcase>
+    <testcase name="Services Management - Normal Flows cancels add service operation without creating" time="1.509" classname="cancels add service operation without creating">
+    </testcase>
+    <testcase name="Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name" time="2.378" classname="creates a service with both name and tags empty and receives auto-generated name">
+    </testcase>
+  </testsuite>
+</testsuites>

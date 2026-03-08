@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="21.086" tests="10" failures="2">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:01:56" tests="0" file="cypress\e2e\service.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Services Management - Normal Flows" timestamp="2026-03-08T02:01:56" tests="5" time="9.784" failures="0">
+    <testcase name="Services Management - Normal Flows creates a new service and shows it in the list" time="2.073" classname="creates a new service and shows it in the list">
+    </testcase>
+    <testcase name="Services Management - Normal Flows displays service details correctly after creation" time="1.722" classname="displays service details correctly after creation">
+    </testcase>
+    <testcase name="Services Management - Normal Flows deletes a service from its detail view" time="2.557" classname="deletes a service from its detail view">
+    </testcase>
+    <testcase name="Services Management - Normal Flows cancels add service operation without creating" time="1.324" classname="cancels add service operation without creating">
+    </testcase>
+    <testcase name="Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name" time="1.080" classname="creates a service with both name and tags empty and receives auto-generated name">
+    </testcase>
+  </testsuite>
+  <testsuite name="Services Management - Error Flows" timestamp="2026-03-08T02:02:06" tests="3" time="9.181" failures="0">
+    <testcase name="Services Management - Error Flows shows validation when required fields missing" time="0.266" classname="shows validation when required fields missing">
+    </testcase>
+    <testcase name="Services Management - Error Flows prevents duplicate service creation" time="2.743" classname="prevents duplicate service creation">
+    </testcase>
+    <testcase name="Services Management - Error Flows prevents deleting a service that has associated routes" time="5.602" classname="prevents deleting a service that has associated routes">
+    </testcase>
+  </testsuite>
+  <testsuite name="Services Management - Validation Flows" timestamp="2026-03-08T02:02:15" tests="2" time="2.119" failures="2">
+    <testcase name="Services Management - Validation Flows warns or sanitizes forbidden characters in service name" time="0.000" classname="warns or sanitizes forbidden characters in service name">
+      <failure message="expected &apos;&apos; to equal &apos;The name can be any string containing characters, letters, numbers, or the following characters: ., -, _, or ~. Do not use spaces.&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'The name can be any string containing characters, letters, numbers, or the following characters: ., -, _, or ~. Do not use spaces.'
+    at Context.eval (webpack://kong-ui-test/./cypress/support/utils/elementUtils.js:50:39)
+    at getRet (http://localhost:8002/__cypress/runner/cypress_runner.js:122806:20)
+    at tryCatcher (http://localhost:8002/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (http://localhost:8002/__cypress/runner/cypress_runner.js:4285:29)
+    at Context.thenFn (http://localhost:8002/__cypress/runner/cypress_runner.js:122817:66)
+    at Context.then (http://localhost:8002/__cypress/runner/cypress_runner.js:123068:21)]]></failure>
+    </testcase>
+    <testcase name="Services Management - Validation Flows validates URL with spaces or control characters" time="0.000" classname="validates URL with spaces or control characters">
+      <failure message="`cy.scrollIntoView()` can only be used to scroll to 1 element, you tried to scroll to 2 elements.
+
+https://on.cypress.io/scrollintoview" type="CypressError"><![CDATA[CypressError: `cy.scrollIntoView()` can only be used to scroll to 1 element, you tried to scroll to 2 elements.
+
+https://on.cypress.io/scrollintoview
+    at Context.scrollIntoView (http://localhost:8002/__cypress/runner/cypress_runner.js:115873:70)
+    at wrapped (http://localhost:8002/__cypress/runner/cypress_runner.js:146326:19)
+    at <unknown> (http://localhost:8002/__cypress/runner/cypress_runner.js:152294:15)
+    at tryCatcher (http://localhost:8002/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (http://localhost:8002/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (http://localhost:8002/__cypress/runner/cypress_runner.js:1546:18)
+    at Promise._settlePromiseCtx (http://localhost:8002/__cypress/runner/cypress_runner.js:1583:10)
+    at _drainQueueStep (http://localhost:8002/__cypress/runner/cypress_runner.js:2381:12)
+    at _drainQueue (http://localhost:8002/__cypress/runner/cypress_runner.js:2370:9)
+    at Async._drainQueues (http://localhost:8002/__cypress/runner/cypress_runner.js:2386:5)
+    at Async.drainQueues (http://localhost:8002/__cypress/runner/cypress_runner.js:2256:14)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

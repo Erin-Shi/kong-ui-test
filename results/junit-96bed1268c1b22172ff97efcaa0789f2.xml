@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.861" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:02:18" tests="0" file="cypress\e2e\service.error.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Services Management - Error Flows" timestamp="2026-03-08T02:02:18" tests="3" time="10.860" failures="0">
+    <testcase name="Services Management - Error Flows shows validation when required fields missing" time="0.689" classname="shows validation when required fields missing">
+    </testcase>
+    <testcase name="Services Management - Error Flows prevents duplicate service creation" time="3.201" classname="prevents duplicate service creation">
+    </testcase>
+    <testcase name="Services Management - Error Flows prevents deleting a service that has associated routes" time="6.239" classname="prevents deleting a service that has associated routes">
+    </testcase>
+  </testsuite>
+</testsuites>

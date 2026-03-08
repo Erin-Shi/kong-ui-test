@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.632" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:03:04" tests="0" file="cypress\e2e\service.validation.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Services Management - Validation Flows" timestamp="2026-03-08T02:03:04" tests="2" time="2.629" failures="2">
+    <testcase name="Services Management - Validation Flows warns or sanitizes forbidden characters in service name" time="0.000" classname="warns or sanitizes forbidden characters in service name">
+      <failure message="expected &apos;&apos; to equal &apos;The name can be any string containing characters, letters, numbers, or the following characters: ., -, _, or ~. Do not use spaces.&apos;" type="AssertionError"><![CDATA[AssertionError: expected '' to equal 'The name can be any string containing characters, letters, numbers, or the following characters: ., -, _, or ~. Do not use spaces.'
+    at Context.eval (webpack://kong-ui-test/./cypress/support/utils/elementUtils.js:50:39)
+    at getRet (http://localhost:8002/__cypress/runner/cypress_runner.js:122806:20)
+    at tryCatcher (http://localhost:8002/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (http://localhost:8002/__cypress/runner/cypress_runner.js:4285:29)
+    at Context.thenFn (http://localhost:8002/__cypress/runner/cypress_runner.js:122817:66)
+    at Context.then (http://localhost:8002/__cypress/runner/cypress_runner.js:123068:21)]]></failure>
+    </testcase>
+    <testcase name="Services Management - Validation Flows validates URL with spaces or control characters" time="0.000" classname="validates URL with spaces or control characters">
+      <failure message="`cy.scrollIntoView()` can only be used to scroll to 1 element, you tried to scroll to 2 elements.
+
+https://on.cypress.io/scrollintoview" type="CypressError"><![CDATA[CypressError: `cy.scrollIntoView()` can only be used to scroll to 1 element, you tried to scroll to 2 elements.
+
+https://on.cypress.io/scrollintoview
+    at Context.scrollIntoView (http://localhost:8002/__cypress/runner/cypress_runner.js:115873:70)
+    at wrapped (http://localhost:8002/__cypress/runner/cypress_runner.js:146326:19)
+    at <unknown> (http://localhost:8002/__cypress/runner/cypress_runner.js:152294:15)
+    at tryCatcher (http://localhost:8002/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (http://localhost:8002/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (http://localhost:8002/__cypress/runner/cypress_runner.js:1546:18)
+    at Promise._settlePromiseCtx (http://localhost:8002/__cypress/runner/cypress_runner.js:1583:10)
+    at _drainQueueStep (http://localhost:8002/__cypress/runner/cypress_runner.js:2381:12)
+    at _drainQueue (http://localhost:8002/__cypress/runner/cypress_runner.js:2370:9)
+    at Async._drainQueues (http://localhost:8002/__cypress/runner/cypress_runner.js:2386:5)
+    at Async.drainQueues (http://localhost:8002/__cypress/runner/cypress_runner.js:2256:14)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

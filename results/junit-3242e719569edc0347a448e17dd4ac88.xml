@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.086" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:01:32" tests="0" file="cypress\e2e\route.error.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Routes Management - Error Flows" timestamp="2026-03-08T02:01:32" tests="2" time="4.085" failures="0">
+    <testcase name="Routes Management - Error Flows shows validation when required fields missing" time="1.316" classname="shows validation when required fields missing">
+    </testcase>
+    <testcase name="Routes Management - Error Flows prevents duplicate route creation" time="2.393" classname="prevents duplicate route creation">
+    </testcase>
+  </testsuite>
+</testsuites>

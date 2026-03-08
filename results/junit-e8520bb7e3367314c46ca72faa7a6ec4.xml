@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.479" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-03-08T02:01:37" tests="0" file="cypress\e2e\route.normal.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Routes Management - Normal Flows" timestamp="2026-03-08T02:01:37" tests="5" time="16.478" failures="0">
+    <testcase name="Routes Management - Normal Flows creates a new route and shows it in the list" time="1.888" classname="creates a new route and shows it in the list">
+    </testcase>
+    <testcase name="Routes Management - Normal Flows displays route details correctly after creation" time="1.585" classname="displays route details correctly after creation">
+    </testcase>
+    <testcase name="Routes Management - Normal Flows creates a new route via service details page" time="8.533" classname="creates a new route via service details page">
+    </testcase>
+    <testcase name="Routes Management - Normal Flows deletes a route from route list in overview page" time="2.220" classname="deletes a route from route list in overview page">
+    </testcase>
+    <testcase name="Routes Management - Normal Flows cancels add route operation without creating" time="1.150" classname="cancels add route operation without creating">
+    </testcase>
+  </testsuite>
+</testsuites>

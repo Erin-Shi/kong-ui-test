@@ -1,0 +1,90 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    services: {}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start application via docker-compose
+        # Use your docker-compose.yaml at repository root to start required services
+        run: |
+          docker-compose -f docker-compose.yaml up -d --build
+
+      - name: Wait for application to be ready
+        # Simple wait ¡ª adjust healthcheck/waiting logic as needed for your app
+        run: |
+          echo "Waiting for app to be ready..."
+          for i in {1..30}; do
+            if curl -sSf http://localhost:8002/default/ >/dev/null; then
+              echo "App is up"
+              exit 0
+            fi
+            echo "Waiting... ($i)"
+            sleep 2
+          done
+          echo "Timed out waiting for app";
+          exit 1
+
+      - name: Run Cypress tests (JUnit + Allure)
+        run: npm run cypress:run:ci
+
+      - name: Generate Allure report (using official action)
+        uses: allure-framework/allure-report-action@v2
+        with:
+          results-directory: 'allure-results'
+          report-directory: 'allure-report'
+
+      - name: Deploy Allure report to GitHub Pages
+        # Deploy the generated HTML report to gh-pages branch so it is viewable via GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
+
+      - name: Upload JUnit test result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-junit-results
+          path: results/**/*.xml
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      - name: Comment on PR if tests failed
+        if: ${{ failure() && github.event_name == 'pull_request' }}
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const pr = context.payload.pull_request.number;
+            const pagesUrl = `https://${owner}.github.io/${repo}/`;
+            const body = `Cypress tests failed in this run.\n\n- JUnit results artifact: see workflow artifacts.\n- Allure report: ${pagesUrl}\n\nPlease open the Actions run for details.`;
+            await github.rest.issues.createComment({ owner, repo, issue_number: pr, body });
