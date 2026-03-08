@@ -47,11 +47,14 @@ jobs:
       - name: Run Cypress tests (JUnit + Allure)
         run: npm run cypress:run:ci
 
-      - name: Generate Allure report (using official action)
-        uses: allure-framework/allure-report-action@v2
-        with:
-          results-directory: 'allure-results'
-          report-directory: 'allure-report'
+      - name: Generate Allure report (using npx allure-commandline)
+        run: |
+          if [ -d "allure-results" ]; then
+            echo "Generating Allure report using npx allure-commandline"
+            npx -y -p allure-commandline@2.13.9 allure generate ./allure-results -o ./allure-report --clean || true
+          else
+            echo "No allure-results directory found, skipping report generation"
+          fi
 
       - name: Deploy Allure report to GitHub Pages
         # Deploy the generated HTML report to gh-pages branch so it is viewable via GitHub Pages
