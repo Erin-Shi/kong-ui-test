@@ -1,11 +1,11 @@
 {
-  "uid" : "b64d61618c8a79f",
+  "uid" : "38558ecdbe179d79",
   "name" : "smoke-test-valid",
   "fullName" : "Allure Smoke Test.smoke-test-valid",
-  "historyId" : "uid-1772948838922-861",
+  "historyId" : "uid-1772955873789-642",
   "time" : {
-    "start" : 1772948838923,
-    "stop" : 1772948838924,
+    "start" : 1772955873790,
+    "stop" : 1772955873791,
     "duration" : 1
   },
   "status" : "passed",
@@ -30,6 +30,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b64d61618c8a79f.json",
+  "source" : "38558ecdbe179d79.json",
   "parameterValues" : [ ]
 }
