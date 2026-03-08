@@ -60,10 +60,19 @@ jobs:
           exit 1
 
       - name: Run Cypress tests (JUnit + Allure)
-        env:
-          TERM: xterm
-          CI: true
-        run: npm run cypress:run:ci
+        run: |
+          echo "Running Cypress and saving full output to cypress_run_ci.log"
+          npm run cypress:run:ci > cypress_run_ci.log 2>&1 || true
+          ec=$?
+          echo ">>> CYPRESS EXIT CODE: $ec"
+          echo ">>> LAST 200 LINES OF OUTPUT:"
+          tail -n 200 cypress_run_ci.log || true
+          echo ">>> tput lines:"
+          grep -i "tput" cypress_run_ci.log || true
+          echo ">>> allowCypressEnv lines:"
+          grep -i "allowCypressEnv" cypress_run_ci.log || true
+          # preserve exit code for the job
+          exit $ec
 
       - name: Generate Allure report (using npx allure-commandline)
         run: |
@@ -96,6 +105,13 @@ jobs:
         with:
           name: allure-report
           path: allure-report
+
+      - name: Upload Cypress run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-run-log
+          path: cypress_run_ci.log
 
       - name: Comment on PR if tests failed
         if: ${{ failure() && github.event_name == 'pull_request' }}
