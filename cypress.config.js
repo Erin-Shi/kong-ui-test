@@ -166,7 +166,7 @@ module.exports = defineConfig({
               stage: 'finished',
               steps: [],
               attachments: [],
-              labels: [{ name: 'framework', value: 'cypress' }, { name: 'generatedBy', value: 'fallback' }],
+              labels: [{ name: 'framework', value: 'cypress' }],
               start: Date.now() - (data.duration || 0),
               stop: Date.now()
             }
