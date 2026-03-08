@@ -25,11 +25,14 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Start application via Docker Compose action
-        uses: docker/compose-action@v2
-        with:
-          files: docker-compose.yaml
-          args: up -d --build
+      - name: Install Docker Compose plugin
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose-plugin
+
+      - name: Start application via docker compose
+        run: |
+          docker compose -f docker-compose.yaml up -d --build
 
       - name: Wait for application to be ready
         # Simple wait ¡ª adjust healthcheck/waiting logic as needed for your app
