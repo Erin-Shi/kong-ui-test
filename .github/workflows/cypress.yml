@@ -74,11 +74,18 @@ jobs:
           # preserve exit code for the job
           exit $ec
 
-      - name: Generate Allure report (using npx allure-commandline)
+      - name: Generate Allure report (install CLI and run)
         run: |
           if [ -d "allure-results" ]; then
-            echo "Generating Allure report using npx allure-commandline"
-            npx -y -p allure-commandline@2.13.9 allure generate ./allure-results -o ./allure-report --clean || true
+            echo "Generating Allure report using globally installed allure-commandline"
+            # Ensure Java runtime available for Allure
+            sudo apt-get update
+            sudo apt-get install -y openjdk-11-jre-headless
+            # Install allure-commandline globally so the `allure` binary exists on PATH
+            npm install -g allure-commandline@2.13.9 --unsafe-perm=true --silent
+            # Verify installation and generate report
+            allure --version
+            allure generate ./allure-results -o ./allure-report --clean || true
           else
             echo "No allure-results directory found, skipping report generation"
           fi
