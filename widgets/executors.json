@@ -1,1 +1,5 @@
-[{"name":"local","type":"local","url":"http://localhost"}]
+[ {
+  "name" : "local",
+  "type" : "local",
+  "url" : "http://localhost"
+} ]

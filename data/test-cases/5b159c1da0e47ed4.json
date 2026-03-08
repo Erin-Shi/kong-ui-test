@@ -1,0 +1,35 @@
+{
+  "uid" : "5b159c1da0e47ed4",
+  "name" : "smoke-test-valid",
+  "fullName" : "Allure Smoke Test.smoke-test-valid",
+  "historyId" : "uid-1772954640863-288",
+  "time" : {
+    "start" : 1772954640863,
+    "stop" : 1772954640864,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5b159c1da0e47ed4.json",
+  "parameterValues" : [ ]
+}
