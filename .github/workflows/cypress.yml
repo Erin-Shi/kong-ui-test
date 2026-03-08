@@ -100,6 +100,14 @@ jobs:
 
             echo "Filtered files:" && ls -la "$FILTERED_DIR" || true
 
+            # Run cleanup script to remove any unsupported top-level properties like _generatedBy
+            if [ -f "scripts/cleanAllureResults.js" ]; then
+              echo "Cleaning filtered results with scripts/cleanAllureResults.js"
+              node scripts/cleanAllureResults.js "$FILTERED_DIR"
+            else
+              echo "No cleanAllureResults.js found, skipping JSON cleanup"
+            fi
+
             # Download Allure binary and run generator on filtered dir
             ALLURE_VERSION=2.13.9
             ARCHIVE_URL="https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz"
