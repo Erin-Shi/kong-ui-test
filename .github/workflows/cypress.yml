@@ -74,18 +74,24 @@ jobs:
           # preserve exit code for the job
           exit $ec
 
-      - name: Generate Allure report (install CLI and run)
+      - name: Generate Allure report (download CLI and run)
         run: |
           if [ -d "allure-results" ]; then
-            echo "Generating Allure report using globally installed allure-commandline"
-            # Ensure Java runtime available for Allure
+            echo "Generating Allure report using downloaded Allure binary"
+            # Ensure Java runtime available for Allure and tools to extract tarball
             sudo apt-get update
-            sudo apt-get install -y openjdk-11-jre-headless
-            # Install allure-commandline globally so the `allure` binary exists on PATH
-            npm install -g allure-commandline@2.13.9 --unsafe-perm=true --silent
-            # Verify installation and generate report
-            allure --version
-            allure generate ./allure-results -o ./allure-report --clean || true
+            sudo apt-get install -y openjdk-11-jre-headless curl tar unzip
+
+            ALLURE_VERSION=2.13.9
+            ARCHIVE_URL="https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz"
+
+            mkdir -p /opt/allure
+            curl -sSL ${ARCHIVE_URL} -o /tmp/allure.tgz
+            tar -xzf /tmp/allure.tgz -C /opt/allure --strip-components=1
+            export PATH="/opt/allure/bin:$PATH"
+
+            echo "Allure version: $(/opt/allure/bin/allure --version)"
+            /opt/allure/bin/allure generate ./allure-results -o ./allure-report --clean || true
           else
             echo "No allure-results directory found, skipping report generation"
           fi
