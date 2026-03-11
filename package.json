@@ -8,6 +8,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:run:ci": "cypress run --reporter junit --reporter-options mochaFile=results/junit-[hash].xml",
+    "cypress:run:ci:allure": "npm run cypress:run:ci && npm run allure:generate",
     "allure:generate": "npx -p allure-commandline allure generate ./allure-results -o ./allure-report --clean",
     "allure:open": "npx -p allure-commandline allure open ./allure-report",
     "cypress:run:tag": "node ./scripts/run-by-tag.js"
