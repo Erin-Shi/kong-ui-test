@@ -1,0 +1,42 @@
+{
+  "uid" : "164c1e9051cf1e6e",
+  "name" : "validates URL with spaces or control characters",
+  "fullName" : "Services Management - Validation Flows validates URL with spaces or control characters",
+  "historyId" : "uid-1772949002443-398",
+  "time" : {
+    "start" : 1772949001400,
+    "stop" : 1772949002443,
+    "duration" : 1043
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "164c1e9051cf1e6e.json",
+  "parameterValues" : [ ]
+}

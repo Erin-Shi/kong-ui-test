@@ -1,0 +1,42 @@
+{
+  "uid" : "7a8a01dc6941c42d",
+  "name" : "deletes a service from its detail view",
+  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
+  "historyId" : "uid-1772948992952-234",
+  "time" : {
+    "start" : 1772948979163,
+    "stop" : 1772948992953,
+    "duration" : 13790
+  },
+  "status" : "failed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7a8a01dc6941c42d.json",
+  "parameterValues" : [ ]
+}
