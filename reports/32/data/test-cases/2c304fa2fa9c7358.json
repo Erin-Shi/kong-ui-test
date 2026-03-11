@@ -1,0 +1,35 @@
+{
+  "uid" : "2c304fa2fa9c7358",
+  "name" : "warns or sanitizes forbidden characters in service name @service @full",
+  "fullName" : "Services - Parameter Validation warns or sanitizes forbidden characters in service name @service @full",
+  "historyId" : "uid-1773223225237-708",
+  "time" : {
+    "start" : 1773223223579,
+    "stop" : 1773223225237,
+    "duration" : 1658
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c304fa2fa9c7358.json",
+  "parameterValues" : [ ]
+}

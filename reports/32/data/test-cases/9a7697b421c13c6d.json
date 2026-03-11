@@ -1,0 +1,35 @@
+{
+  "uid" : "9a7697b421c13c6d",
+  "name" : "placeholder for update tests @service @full",
+  "fullName" : "Services - Update placeholder for update tests @service @full",
+  "historyId" : "uid-1773223236614-109",
+  "time" : {
+    "start" : 1773223235427,
+    "stop" : 1773223236614,
+    "duration" : 1187
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a7697b421c13c6d.json",
+  "parameterValues" : [ ]
+}

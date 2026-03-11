@@ -1,0 +1,191 @@
+[ {
+  "uid" : "ef7bcd2a1b33c45",
+  "name" : "shows validation when required fields missing @service @full",
+  "time" : {
+    "start" : 1773223206825,
+    "stop" : 1773223208022,
+    "duration" : 1197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93129c33569b807a",
+  "name" : "prevents deleting a service that has associated routes @service @full",
+  "time" : {
+    "start" : 1773223212962,
+    "stop" : 1773223221768,
+    "duration" : 8806
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7491c7af5c626f3a",
+  "name" : "creates a new route via service details page @route @critical @full",
+  "time" : {
+    "start" : 1773223155808,
+    "stop" : 1773223165672,
+    "duration" : 9864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5d2176bac6a1c09",
+  "name" : "creates a new service and shows it in the list @critical @service @full",
+  "time" : {
+    "start" : 1773223191997,
+    "stop" : 1773223196238,
+    "duration" : 4241
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1bf9c830f07b9eb7",
+  "name" : "shows validation when required fields missing @route @full",
+  "time" : {
+    "start" : 1773223173647,
+    "stop" : 1773223175004,
+    "duration" : 1357
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efb93a9029a0db34",
+  "name" : "creates a new route and shows it in the list @route @critical @full",
+  "time" : {
+    "start" : 1773223149822,
+    "stop" : 1773223155625,
+    "duration" : 5803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e30cbe59eedccd3a",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name @critical @service @full",
+  "time" : {
+    "start" : 1773223196290,
+    "stop" : 1773223199065,
+    "duration" : 2775
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e4997a08f457a08",
+  "name" : "prevents duplicate service creation @service @full",
+  "time" : {
+    "start" : 1773223208075,
+    "stop" : 1773223212779,
+    "duration" : 4704
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c95a9c9faf77f099",
+  "name" : "prevents duplicate route creation @route @full",
+  "time" : {
+    "start" : 1773223175047,
+    "stop" : 1773223179507,
+    "duration" : 4460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13ad38a14dd44d0f",
+  "name" : "displays service details correctly after creation @critical @service @full",
+  "time" : {
+    "start" : 1773223228085,
+    "stop" : 1773223233590,
+    "duration" : 5505
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4951fc2ab35270f",
+  "name" : "placeholder param validation @route @full",
+  "time" : {
+    "start" : 1773223181292,
+    "stop" : 1773223182493,
+    "duration" : 1201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c304fa2fa9c7358",
+  "name" : "warns or sanitizes forbidden characters in service name @service @full",
+  "time" : {
+    "start" : 1773223223579,
+    "stop" : 1773223225237,
+    "duration" : 1658
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8161d788843a94a",
+  "name" : "deletes a route from route list in overview page @route @full",
+  "time" : {
+    "start" : 1773223167548,
+    "stop" : 1773223171746,
+    "duration" : 4198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fbd5949c4b444138",
+  "name" : "validates URL with spaces or control characters @service @full",
+  "time" : {
+    "start" : 1773223225282,
+    "stop" : 1773223226400,
+    "duration" : 1118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba4208ac3935509e",
+  "name" : "placeholder for update tests @route @full",
+  "time" : {
+    "start" : 1773223189604,
+    "stop" : 1773223189627,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7090e0d6c9195423",
+  "name" : "displays route details correctly after creation @route @full",
+  "time" : {
+    "start" : 1773223184349,
+    "stop" : 1773223187951,
+    "duration" : 3602
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd50722f74fdbf7b",
+  "name" : "deletes a service from its overview view @critical @service @full",
+  "time" : {
+    "start" : 1773223200748,
+    "stop" : 1773223205115,
+    "duration" : 4367
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a7697b421c13c6d",
+  "name" : "placeholder for update tests @service @full",
+  "time" : {
+    "start" : 1773223235427,
+    "stop" : 1773223236614,
+    "duration" : 1187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2634c774cebd5f3",
+  "name" : "generates allure-results artifacts @full",
+  "time" : {
+    "start" : 1773223147746,
+    "stop" : 1773223147892,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

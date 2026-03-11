@@ -1,0 +1,35 @@
+{
+  "uid" : "e30cbe59eedccd3a",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name @critical @service @full",
+  "fullName" : "Services - Create creates a service with both name and tags empty and receives auto-generated name @critical @service @full",
+  "historyId" : "uid-1773223199065-748",
+  "time" : {
+    "start" : 1773223196290,
+    "stop" : 1773223199065,
+    "duration" : 2775
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e30cbe59eedccd3a.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "93129c33569b807a",
+  "name" : "prevents deleting a service that has associated routes @service @full",
+  "fullName" : "Services Management - Error Flows prevents deleting a service that has associated routes @service @full",
+  "historyId" : "uid-1773223221768-473",
+  "time" : {
+    "start" : 1773223212962,
+    "stop" : 1773223221768,
+    "duration" : 8806
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "93129c33569b807a.json",
+  "parameterValues" : [ ]
+}

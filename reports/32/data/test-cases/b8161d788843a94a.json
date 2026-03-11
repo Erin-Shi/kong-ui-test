@@ -1,0 +1,35 @@
+{
+  "uid" : "b8161d788843a94a",
+  "name" : "deletes a route from route list in overview page @route @full",
+  "fullName" : "Routes - Delete deletes a route from route list in overview page @route @full",
+  "historyId" : "uid-1773223171746-159",
+  "time" : {
+    "start" : 1773223167548,
+    "stop" : 1773223171746,
+    "duration" : 4198
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8161d788843a94a.json",
+  "parameterValues" : [ ]
+}
