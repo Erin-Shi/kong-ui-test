@@ -123,19 +123,6 @@ jobs:
 
             echo "Allure version: $(/opt/allure/bin/allure --version)"
             /opt/allure/bin/allure generate "$FILTERED_DIR" -o ./allure-report --clean || true
-
-            # Debug output: list generated report files and timestamps
-            echo "=== DEBUG: Generated allure-report files ==="
-            ls -laR ./allure-report || true
-            if [ -f "allure-report/index.html" ]; then
-              echo "--- top of allure-report/index.html ---"
-              sed -n '1,200p' allure-report/index.html || true
-              echo "--- end ---"
-            fi
-            echo "=== DEBUG: Filtered JSON files ==="
-            ls -la "$FILTERED_DIR" || true
-            echo "=== DEBUG: File timestamps in allure-report ==="
-            find ./allure-report -type f -printf '%TY-%Tm-%Td %TH:%TM:%TS %p\n' | sort || true
           else
             echo "No allure-results directory found, skipping report generation"
           fi
@@ -170,27 +157,23 @@ jobs:
             TARGET_DIR="reports/${{ github.run_number }}"
             rm -rf "$TARGET_DIR"
             mkdir -p "$TARGET_DIR"
-            # Copy all files (including hidden) from generated report into target directory
-            cp -a "$GITHUB_WORKSPACE/allure-report/." "$TARGET_DIR/" || true
+            cp -r "$GITHUB_WORKSPACE/allure-report/"* "$TARGET_DIR/"
 
             # Generate a simple index.html listing all report subfolders
             echo "<!doctype html><html><head><meta charset='utf-8'><title>Allure Reports</title></head><body><h1>Allure Reports</h1><ul>" > index.html
-            # List reports sorted by name (numeric run_number) descending so newest first
-            for d in $(ls -1v reports | tac); do
-              if [ -d "reports/$d" ]; then
-                echo "<li><a href=\"reports/$d/\">Run $d</a></li>" >> index.html
-              fi
+            for d in reports/*/; do
+              name=$(basename "$d")
+              echo "<li><a href=\"reports/$name/\">Run $name</a></li>" >> index.html
             done
             echo "</ul></body></html>" >> index.html
 
             git add -A
-            # Commit only if there are changes
-            if [ -n "$(git status --porcelain)" ]; then
-              git commit -m "Add allure report for run ${{ github.run_number }} (run id ${{ github.run_id }})" || true
-              git push "$GIT_URL" gh-pages
-            else
-              echo "No changes to commit"
-            fi
+            git commit -m "Add allure report for run ${{ github.run_number }} (run id ${{ github.run_id }})" || true
+            git push "$GIT_URL" gh-pages
+            echo "Deployed to gh-pages/reports/${{ github.run_number }}"
+          else
+            echo "No allure-report directory found, skipping gh-pages deploy"
+          fi
         env:
           GITHUB_WORKSPACE: ${{ github.workspace }}
           GITHUB_ACTOR: ${{ github.actor }}
