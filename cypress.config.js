@@ -24,6 +24,31 @@ module.exports = defineConfig({
       config.env = config.env || {}
       config.env.ALLURE_RESULTS_DIR = resultsDir
 
+      // Debug: print incoming grep-related env values so we can verify what plugin sees
+      // eslint-disable-next-line no-console
+      console.log('cypress.config.setupNodeEvents: incoming config.env ->', {
+        grepTags: config.env && config.env.grepTags,
+        grepFilterSpecs: config.env && config.env.grepFilterSpecs,
+        grepDebug: config.env && config.env.grepDebug,
+      })
+
+      // Make cypress-grep plugin available to the runner if installed
+      try {
+        // eslint-disable-next-line global-require
+        const cypressGrepPlugin = require('cypress-grep/src/plugin')
+        if (typeof cypressGrepPlugin === 'function') {
+          cypressGrepPlugin(on, config)
+          // eslint-disable-next-line no-console
+          console.log('cypress-grep plugin registered')
+        }
+      } catch (err) {
+        // eslint-disable-next-line no-console
+        console.warn('cypress-grep plugin not registered:', err && err.message)
+      }
+
+      // Enable spec filtering by grep tags when running via CLI
+      config.env.grepFilterSpecs = config.env.grepFilterSpecs || true
+
       // Create directory early so we can verify write access
       try {
         fs.mkdirSync(resultsDir, { recursive: true })

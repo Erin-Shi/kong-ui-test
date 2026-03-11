@@ -1,5 +1,5 @@
 describe('Allure Smoke Test', () => {
-  it('generates allure-results artifacts', () => {
+  it('generates allure-results artifacts @full', () => {
     // mark feature and story for Allure
     cy.allure().feature('smoke-tests');
     cy.allure().story('allure-integration');

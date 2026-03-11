@@ -1,9 +1,10 @@
+import 'cypress-grep'
 // Import Allure plugin to enable generation of allure-results during tests
 import '@shelex/cypress-allure-plugin';
 
 // Debug log to confirm support file loaded and plugin import executed
 // eslint-disable-next-line no-console
-console.log('support/e2e.js loaded and cypress-allure-plugin imported');
+console.log('support/e2e.js loaded and cypress-allure-plugin and cypress-grep imported');
 
 // Add global uncaught exception handler to capture cross-origin errors for debugging
 // This will log the error to the runner and prevent the test from failing due to uncaught exceptions

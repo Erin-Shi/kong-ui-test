@@ -7,21 +7,22 @@ import ElementUtils from '../support/utils/elementUtils';
 describe('Routes Management - Error Flows', () => {
   const getTestData = registerRouteHooks();
 
-  it('shows validation when required fields missing', () => {
+  it('shows validation when required fields missing @route @full', () => {
     const testRouteData = getTestData();
-    RoutesOverviewPage.clickAddRoute();
+    RoutesOverviewPage.clickAddRouteFromEmpty();
     // Leave name empty and assert save/submit is disabled
     ElementUtils.assertDisabledByTestId('route-create-form-submit', true);
   });
 
-  it('prevents duplicate route creation', () => {
-    const testRouteData = getTestData();
-    RoutesOverviewPage.clickAddRoute();
+  it('prevents duplicate route creation @route @full', () => {
+      const testRouteData = getTestData();
+      RoutesOverviewPage.visit();
+    RoutesOverviewPage.clickAddRouteFromEmpty();
     RouteCreationPage.createRoute(testRouteData);
     ElementUtils.checkToasterMessage('successfully created');
 
     RoutesOverviewPage.visit();
-    RoutesOverviewPage.clickAddRoute();
+    RoutesOverviewPage.clickAddRouteInToolbar();
     RouteCreationPage.createRoute(testRouteData);
 
     const expected = `UNIQUE violation detected on '{name="${testRouteData.name}"}'`;
@@ -30,5 +31,7 @@ describe('Routes Management - Error Flows', () => {
       expect(text).to.contain('UNIQUE violation detected');
       expect(text).to.contain(`{name="${testRouteData.name}"}`);
     });
+      RoutesOverviewPage.visit();
+      RoutesOverviewPage.deleteRoute(testRouteData.name);
   });
 });

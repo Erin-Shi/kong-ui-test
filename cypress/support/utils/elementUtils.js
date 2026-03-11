@@ -30,9 +30,27 @@ const ElementUtils = {
   // Get the value (or text) of an element by data-testid ¡ª returns a chainable resolving to the final string
   getValueByTestId(testId) {
     const selector = this._testIdSelector(testId);
-    return cy.get(selector).should('be.visible').then($el => {
-      const val = $el.val();
-      return (typeof val !== 'undefined' && val !== null) ? String(val) : $el.text().trim();
+    // Mirror behaviour of checkValue: ensure element is scrolled into view and visible first
+    return cy.get(selector).scrollIntoView().should('be.visible').then($el => {
+      // Prefer the first matched element
+      const el = $el[0];
+      if (!el) return cy.wrap('');
+      const tag = el.tagName && el.tagName.toLowerCase();
+
+      // For form controls and paragraphs, read the value
+      if (tag === 'input' || tag === 'textarea' || tag === 'select' || tag === 'p') {
+        const val = $el.val();
+        return (typeof val !== 'undefined' && val !== null) ? String(val) : '';
+      }
+
+      // If element contains a single span child often used for plain-text displays, prefer that
+      const $span = $el.querySelector && $el.querySelector('span');
+      if ($span) {
+        return String($span.textContent || '').trim();
+      }
+
+      // Fallback to trimmed text content of the element
+      return String($el.text().trim());
     });
   },
 
@@ -40,6 +58,13 @@ const ElementUtils = {
   checkElementValueByTestId(testId, expectedValue) {
         const selector = this._testIdSelector(testId);
       this.checkValue(selector, expectedValue);
+  },
+
+  // Return the textual value of an element identified by data-testid.
+  // Resolves to the element's value (for inputs) or trimmed text content for other elements.
+  getElementValueByTestId(testId) {
+    // Delegate to getValueByTestId for consistent behavior
+    return this.getValueByTestId(testId);
   },
 
     checkValue(selector, expectedValue) {
@@ -56,7 +81,7 @@ const ElementUtils = {
     },
 
     checkItemValue(selector, expectedValue) {
-        cy.get(selector).scrollIntoView().should('have.text', String(expectedValue));
+        cy.get(selector).should('have.text', String(expectedValue));
     },
 
 
@@ -68,6 +93,16 @@ const ElementUtils = {
   existsByTestId(testId) {
     const selector = this._testIdSelector(testId);
     return cy.get(selector).should('exist');
+  },
+
+  // Check existence of an element by data-testid without failing the test.
+  // Returns a chainable resolving to a boolean.
+  existsOptionalByTestId(testId) {
+    const selector = this._testIdSelector(testId);
+    return cy.get('body').then($body => {
+      const found = $body.find(selector).length > 0;
+      return cy.wrap(found);
+    });
   },
 
   // Assert non-existence of an element by data-testid
@@ -171,7 +206,23 @@ const ElementUtils = {
         expect(text).to.contain(String(expectedMessage));
       }
     });
-  }
+  },
+
+  // Wait for any element with class 'loading-container' to disappear from the page.
+  // This handles both cases where the element is present and then removed, or not present at all.
+  // timeout is optional milliseconds to wait for disappearance.
+  waitForLoadingToFinish(timeout = 10000) {
+    // Check if loading element exists first to avoid cy.get failing when absent
+    return cy.get('body').then($body => {
+      const found = $body.find('.loading-container').length > 0;
+      if (found) {
+        return cy.get('.loading-container', { timeout }).should('not.exist');
+      }
+      // nothing to wait for
+      return cy.wrap(true);
+    });
+  },
+
 };
 
 export default ElementUtils;

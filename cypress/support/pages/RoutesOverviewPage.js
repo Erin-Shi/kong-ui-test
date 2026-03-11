@@ -4,9 +4,15 @@ class RoutesOverviewPage {
     visit() {
         ElementUtils.visitPage('/routes');
         ElementUtils.checkPageNavigation('Routes', 'h3');
+        ElementUtils.waitForLoadingToFinish();
     }
 
-    clickAddRoute() {
+    clickAddRouteFromEmpty() {
+        ElementUtils.clickByTestId('empty-state-action');
+        ElementUtils.checkPageNavigation('Create Route', 'h3');
+    }
+
+    clickAddRouteInToolbar() {
         ElementUtils.clickByTestId('toolbar-add-route');
         ElementUtils.checkPageNavigation('Create Route', 'h3');
     }

@@ -11,21 +11,21 @@ import ElementUtils from '../support/utils/elementUtils';
 describe('Services Management - Error Flows', () => {
   const getTestData = registerServiceHooks();
 
-  it('shows validation when required fields missing', () => {
-    ServicesOverviewPage.clickAddService();
+    it('shows validation when required fields missing @service @full', () => {
+        ServicesOverviewPage.clickAddServiceFromEmpty();
     // The correct behavior is that the submit/save button is disabled when name is missing
     ElementUtils.assertDisabledByTestId('service-create-form-submit', true);
   });
 
-  it('prevents duplicate service creation', () => {
-    const testServiceData = getTestData();
-    ServicesOverviewPage.clickAddService();
+  it('prevents duplicate service creation @service @full', () => {
+      const testServiceData = getTestData();
+      ServicesOverviewPage.clickAddServiceFromEmpty();
     ServiceCreationPage.createService(testServiceData);
     // wait for success toaster using existing helper
     ElementUtils.checkToasterMessage('successfully created');
 
     ServicesOverviewPage.visit();
-    ServicesOverviewPage.clickAddService();
+    ServicesOverviewPage.clickAddServiceInToolbar();
     ServiceCreationPage.createService(testServiceData);
 
     // When duplicate, the form displays an element with data-testid="form-error"
@@ -36,14 +36,16 @@ describe('Services Management - Error Flows', () => {
       expect(text).to.contain('UNIQUE violation detected');
       expect(text).to.contain(`{name="${testServiceData.name}"}`);
     });
+      ServicesOverviewPage.visit()
+      ServicesOverviewPage.deleteService(testServiceData.name);
   });
 
-  it('prevents deleting a service that has associated routes', () => {
+  it('prevents deleting a service that has associated routes @service @full', () => {
     const testServiceData = getTestData();
     const testRouteData = DataFactory.getDefaultRouteData();
 
-    // Create the service
-    ServicesOverviewPage.clickAddService();
+      // Create the service
+      ServicesOverviewPage.clickAddServiceFromEmpty();
     ServiceCreationPage.createService(testServiceData);
     ElementUtils.checkToasterMessage('successfully created');
 

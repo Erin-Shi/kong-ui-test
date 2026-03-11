@@ -10,14 +10,7 @@ export function registerRouteHooks() {
   })
 
   afterEach(() => {
-    if (!testRouteData) return
-    RoutesOverviewPage.visit()
-    const selector = `tr[data-testid="${testRouteData.name}"]`, simpleSelector = `[data-testid="${testRouteData.name}"]`
-    cy.document().then(doc => {
-      if (doc.querySelector(selector) || doc.querySelector(simpleSelector)) {
-        return RoutesOverviewPage.deleteRoute(testRouteData.name)
-      }
-    })
+    
   })
 
   return () => testRouteData

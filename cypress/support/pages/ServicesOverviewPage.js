@@ -5,6 +5,7 @@ class ServicesOverviewPage {
         // Use centralized visit wrapper and header check
         ElementUtils.visitPage('/services');
         ElementUtils.checkPageNavigation('Gateway Services', 'h3');
+        ElementUtils.waitForLoadingToFinish();
     }
 
     selectService(serviceName) {
@@ -13,8 +14,13 @@ class ServicesOverviewPage {
         ElementUtils.checkPageNavigation(serviceName, 'h3');
     }
 
-    clickAddService() {
+    clickAddServiceInToolbar() {
         ElementUtils.clickByTestId('toolbar-add-gateway-service');
+        ElementUtils.checkPageNavigation('New Gateway Service', 'h3');
+    }
+
+    clickAddServiceFromEmpty() {
+        ElementUtils.clickByTestId('empty-state-action');
         ElementUtils.checkPageNavigation('New Gateway Service', 'h3');
     }
 
