@@ -1,0 +1,38 @@
+{
+  "uid" : "5bef96018fdfb7df",
+  "name" : "deletes a route from route list in overview page",
+  "fullName" : "Routes Management - Normal Flows deletes a route from route list in overview page",
+  "historyId" : "uid-1772948879481-778",
+  "time" : {
+    "start" : 1772948872808,
+    "stop" : 1772948879481,
+    "duration" : 6673
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5bef96018fdfb7df.json",
+  "parameterValues" : [ ]
+}
