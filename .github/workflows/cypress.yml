@@ -27,13 +27,13 @@ jobs:
           # Pin Node to 18.16.0 to avoid issues with deprecated --loader flag in newer Node versions
           node-version: '18.16.0'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install cypress-grep (legacy peer deps)
+      - name: Install dependencies (allow legacy peer deps)
         run: |
-          # Some cypress-grep versions have peerDependency constraints; install with legacy-peer-deps to avoid failures
-          npm install --save-dev cypress-grep --legacy-peer-deps
+          # Some projects include dependencies with peerDependency constraints incompatible with
+          # the environment. Enable legacy-peer-deps to make installs permissive and use the
+          # lockfile for deterministic installs.
+          npm config set legacy-peer-deps true
+          npm ci
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -128,13 +128,55 @@ jobs:
           fi
 
       - name: Deploy Allure report to GitHub Pages
-        # Deploy the generated HTML report to gh-pages branch so it is viewable via GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        # Deploy the generated Allure HTML report to gh-pages and preserve history
+        # Copies current `allure-report` into `reports/${{ github.run_number }}` on the gh-pages branch
         if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-          publish_branch: gh-pages
+        run: |
+          set -e
+          if [ -d "allure-report" ]; then
+            echo "Deploying allure-report to gh-pages/reports/${{ github.run_number }}"
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            GIT_URL="https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+            TMP_DIR=$(mktemp -d)
+            # Try to clone only gh-pages; if it doesn't exist, clone default branch and create gh-pages
+            if git ls-remote --exit-code --heads "$GIT_URL" gh-pages >/dev/null 2>&1; then
+              git clone --branch gh-pages --single-branch "$GIT_URL" "$TMP_DIR"
+            else
+              git clone "$GIT_URL" "$TMP_DIR"
+              cd "$TMP_DIR"
+              git checkout --orphan gh-pages
+              git rm -rf . || true
+              git commit --allow-empty -m "Initialize gh-pages" || true
+              git push "$GIT_URL" gh-pages || true
+              cd - >/dev/null
+              git clone --branch gh-pages --single-branch "$GIT_URL" "$TMP_DIR"
+            fi
+            cd "$TMP_DIR"
+            mkdir -p reports
+            TARGET_DIR="reports/${{ github.run_number }}"
+            rm -rf "$TARGET_DIR"
+            mkdir -p "$TARGET_DIR"
+            cp -r "$GITHUB_WORKSPACE/allure-report/"* "$TARGET_DIR/"
+
+            # Generate a simple index.html listing all report subfolders
+            echo "<!doctype html><html><head><meta charset='utf-8'><title>Allure Reports</title></head><body><h1>Allure Reports</h1><ul>" > index.html
+            for d in reports/*/; do
+              name=$(basename "$d")
+              echo "<li><a href=\"reports/$name/\">Run $name</a></li>" >> index.html
+            done
+            echo "</ul></body></html>" >> index.html
+
+            git add -A
+            git commit -m "Add allure report for run ${{ github.run_number }} (run id ${{ github.run_id }})" || true
+            git push "$GIT_URL" gh-pages
+            echo "Deployed to gh-pages/reports/${{ github.run_number }}"
+          else
+            echo "No allure-report directory found, skipping gh-pages deploy"
+          fi
+        env:
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          GITHUB_ACTOR: ${{ github.actor }}
 
       - name: Upload JUnit test result
         if: always()
