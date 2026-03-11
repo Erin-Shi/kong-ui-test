@@ -18,7 +18,6 @@
   "type": "commonjs",
   "devDependencies": {
     "cypress": "^15.11.0",
-    "@shelex/cypress-allure-plugin": "^2.38.0",
-    "cypress-grep": "^3.0.4"
+    "@shelex/cypress-allure-plugin": "^2.38.0"
   }
 }
