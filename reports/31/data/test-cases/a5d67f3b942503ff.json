@@ -1,0 +1,35 @@
+{
+  "uid" : "a5d67f3b942503ff",
+  "name" : "generates allure-results artifacts @full",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts @full",
+  "historyId" : "uid-1773218147419-341",
+  "time" : {
+    "start" : 1773218147303,
+    "stop" : 1773218147419,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a5d67f3b942503ff.json",
+  "parameterValues" : [ ]
+}

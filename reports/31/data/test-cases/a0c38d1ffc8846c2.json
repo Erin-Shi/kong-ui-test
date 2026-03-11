@@ -1,0 +1,35 @@
+{
+  "uid" : "a0c38d1ffc8846c2",
+  "name" : "displays route details correctly after creation @route @full",
+  "fullName" : "Routes - Retrieve displays route details correctly after creation @route @full",
+  "historyId" : "uid-1773218187012-146",
+  "time" : {
+    "start" : 1773218183537,
+    "stop" : 1773218187012,
+    "duration" : 3475
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a0c38d1ffc8846c2.json",
+  "parameterValues" : [ ]
+}

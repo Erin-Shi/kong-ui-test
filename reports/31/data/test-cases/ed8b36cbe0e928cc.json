@@ -1,0 +1,35 @@
+{
+  "uid" : "ed8b36cbe0e928cc",
+  "name" : "prevents duplicate route creation @route @full",
+  "fullName" : "Routes Management - Error Flows prevents duplicate route creation @route @full",
+  "historyId" : "uid-1773218178946-144",
+  "time" : {
+    "start" : 1773218173895,
+    "stop" : 1773218178946,
+    "duration" : 5051
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ed8b36cbe0e928cc.json",
+  "parameterValues" : [ ]
+}

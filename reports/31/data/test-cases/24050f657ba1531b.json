@@ -1,0 +1,35 @@
+{
+  "uid" : "24050f657ba1531b",
+  "name" : "validates URL with spaces or control characters @service @full",
+  "fullName" : "Services - Parameter Validation validates URL with spaces or control characters @service @full",
+  "historyId" : "uid-1773218225947-191",
+  "time" : {
+    "start" : 1773218224875,
+    "stop" : 1773218225947,
+    "duration" : 1072
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24050f657ba1531b.json",
+  "parameterValues" : [ ]
+}
