@@ -1,12 +1,12 @@
 {
-  "uid" : "8e8bfe933a7b5801",
-  "name" : "displays service details correctly after creation",
-  "fullName" : "Services Management - Normal Flows displays service details correctly after creation",
-  "historyId" : "uid-1772948899069-704",
+  "uid" : "54f2e291f5ea6ce0",
+  "name" : "validates URL with spaces or control characters",
+  "fullName" : "Services Management - Validation Flows validates URL with spaces or control characters",
+  "historyId" : "uid-1772949002443-398",
   "time" : {
-    "start" : 1772948887173,
-    "stop" : 1772948899069,
-    "duration" : 11896
+    "start" : 1772949001400,
+    "stop" : 1772949002443,
+    "duration" : 1043
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "8e8bfe933a7b5801.json",
+  "source" : "54f2e291f5ea6ce0.json",
   "parameterValues" : [ ]
 }

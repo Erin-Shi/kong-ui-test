@@ -1,12 +1,12 @@
 {
-  "uid" : "31fdeda4131005fa",
+  "uid" : "bef5d99af4f5ae62",
   "name" : "displays service details correctly after creation",
   "fullName" : "Services Management - Normal Flows displays service details correctly after creation",
-  "historyId" : "uid-1772948978422-997",
+  "historyId" : "uid-1772948899069-704",
   "time" : {
-    "start" : 1772948966620,
-    "stop" : 1772948978422,
-    "duration" : 11802
+    "start" : 1772948887173,
+    "stop" : 1772948899069,
+    "duration" : 11896
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "31fdeda4131005fa.json",
+  "source" : "bef5d99af4f5ae62.json",
   "parameterValues" : [ ]
 }

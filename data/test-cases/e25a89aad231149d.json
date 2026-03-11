@@ -1,12 +1,12 @@
 {
-  "uid" : "27e1c26d5e14393f",
-  "name" : "cancels add service operation without creating",
-  "fullName" : "Services Management - Normal Flows cancels add service operation without creating",
-  "historyId" : "uid-1772948994829-542",
+  "uid" : "e25a89aad231149d",
+  "name" : "displays route details correctly after creation",
+  "fullName" : "Routes Management - Normal Flows displays route details correctly after creation",
+  "historyId" : "uid-1772948853647-492",
   "time" : {
-    "start" : 1772948993181,
-    "stop" : 1772948994829,
-    "duration" : 1648
+    "start" : 1772948851786,
+    "stop" : 1772948853647,
+    "duration" : 1861
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "27e1c26d5e14393f.json",
+  "source" : "e25a89aad231149d.json",
   "parameterValues" : [ ]
 }

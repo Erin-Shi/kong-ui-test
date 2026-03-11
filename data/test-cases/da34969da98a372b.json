@@ -1,14 +1,14 @@
 {
-  "uid" : "328711191f146915",
-  "name" : "deletes a service from its detail view",
-  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
-  "historyId" : "uid-1772948913116-940",
+  "uid" : "da34969da98a372b",
+  "name" : "generates allure-results artifacts",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts",
+  "historyId" : "uid-1772948838945-706",
   "time" : {
-    "start" : 1772948900065,
-    "stop" : 1772948913116,
-    "duration" : 13051
+    "start" : 1772948838883,
+    "stop" : 1772948838945,
+    "duration" : 62
   },
-  "status" : "failed",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,13 +30,9 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "328711191f146915.json",
+  "source" : "da34969da98a372b.json",
   "parameterValues" : [ ]
 }

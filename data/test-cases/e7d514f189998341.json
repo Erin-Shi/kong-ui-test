@@ -1,12 +1,12 @@
 {
-  "uid" : "a0459c068c6e954c",
-  "name" : "smoke-test-valid",
-  "fullName" : "Allure Smoke Test.smoke-test-valid",
-  "historyId" : "uid-1772948838922-861",
+  "uid" : "e7d514f189998341",
+  "name" : "cancels add route operation without creating",
+  "fullName" : "Routes Management - Normal Flows cancels add route operation without creating",
+  "historyId" : "uid-1772948880967-494",
   "time" : {
-    "start" : 1772948838923,
-    "stop" : 1772948838924,
-    "duration" : 1
+    "start" : 1772948879713,
+    "stop" : 1772948880967,
+    "duration" : 1254
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,6 +16,9 @@
   "labels" : [ {
     "name" : "framework",
     "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -30,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a0459c068c6e954c.json",
+  "source" : "e7d514f189998341.json",
   "parameterValues" : [ ]
 }

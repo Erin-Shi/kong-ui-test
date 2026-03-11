@@ -1,14 +1,14 @@
 {
-  "uid" : "6df511f7bdbb3542",
-  "name" : "prevents duplicate service creation",
-  "fullName" : "Services Management - Error Flows prevents duplicate service creation",
-  "historyId" : "uid-1772948949128-526",
+  "uid" : "da45310c0dbc3f1c",
+  "name" : "deletes a service from its detail view",
+  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
+  "historyId" : "uid-1772948913116-940",
   "time" : {
-    "start" : 1772948945831,
-    "stop" : 1772948949128,
-    "duration" : 3297
+    "start" : 1772948900065,
+    "stop" : 1772948913116,
+    "duration" : 13051
   },
-  "status" : "passed",
+  "status" : "failed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,9 +30,13 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "6df511f7bdbb3542.json",
+  "source" : "da45310c0dbc3f1c.json",
   "parameterValues" : [ ]
 }

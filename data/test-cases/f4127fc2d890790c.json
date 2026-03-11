@@ -1,12 +1,12 @@
 {
-  "uid" : "e3f6de8d84cd7936",
-  "name" : "displays route details correctly after creation",
-  "fullName" : "Routes Management - Normal Flows displays route details correctly after creation",
-  "historyId" : "uid-1772948853647-492",
+  "uid" : "f4127fc2d890790c",
+  "name" : "creates a new route and shows it in the list",
+  "fullName" : "Routes Management - Normal Flows creates a new route and shows it in the list",
+  "historyId" : "uid-1772948851370-73",
   "time" : {
-    "start" : 1772948851786,
-    "stop" : 1772948853647,
-    "duration" : 1861
+    "start" : 1772948849374,
+    "stop" : 1772948851370,
+    "duration" : 1996
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e3f6de8d84cd7936.json",
+  "source" : "f4127fc2d890790c.json",
   "parameterValues" : [ ]
 }
