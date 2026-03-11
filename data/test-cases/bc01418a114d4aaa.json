@@ -1,12 +1,12 @@
 {
-  "uid" : "5a1b84055b604c1a",
-  "name" : "creates a new service and shows it in the list",
-  "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
-  "historyId" : "uid-1772948886632-960",
+  "uid" : "bc01418a114d4aaa",
+  "name" : "creates a new route and shows it in the list",
+  "fullName" : "Routes Management - Normal Flows creates a new route and shows it in the list",
+  "historyId" : "uid-1772948851370-73",
   "time" : {
-    "start" : 1772948884206,
-    "stop" : 1772948886632,
-    "duration" : 2426
+    "start" : 1772948849374,
+    "stop" : 1772948851370,
+    "duration" : 1996
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5a1b84055b604c1a.json",
+  "source" : "bc01418a114d4aaa.json",
   "parameterValues" : [ ]
 }

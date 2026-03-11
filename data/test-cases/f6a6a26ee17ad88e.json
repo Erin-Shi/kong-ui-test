@@ -1,12 +1,12 @@
 {
-  "uid" : "2a53df82ba87c099",
-  "name" : "generates allure-results artifacts",
-  "fullName" : "Allure Smoke Test generates allure-results artifacts",
-  "historyId" : "uid-1772948838945-706",
+  "uid" : "f6a6a26ee17ad88e",
+  "name" : "deletes a route from route list in overview page",
+  "fullName" : "Routes Management - Normal Flows deletes a route from route list in overview page",
+  "historyId" : "uid-1772948879481-778",
   "time" : {
-    "start" : 1772948838883,
-    "stop" : 1772948838945,
-    "duration" : 62
+    "start" : 1772948872808,
+    "stop" : 1772948879481,
+    "duration" : 6673
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2a53df82ba87c099.json",
+  "source" : "f6a6a26ee17ad88e.json",
   "parameterValues" : [ ]
 }

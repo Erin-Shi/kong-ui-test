@@ -1,12 +1,12 @@
 {
-  "uid" : "4194e39a8d58f982",
-  "name" : "creates a service with both name and tags empty and receives auto-generated name",
-  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
-  "historyId" : "uid-1772948918202-676",
+  "uid" : "6e9c5fc55d64c941",
+  "name" : "shows validation when required fields missing",
+  "fullName" : "Routes Management - Error Flows shows validation when required fields missing",
+  "historyId" : "uid-1772948841470-403",
   "time" : {
-    "start" : 1772948915439,
-    "stop" : 1772948918202,
-    "duration" : 2763
+    "start" : 1772948840124,
+    "stop" : 1772948841470,
+    "duration" : 1346
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4194e39a8d58f982.json",
+  "source" : "6e9c5fc55d64c941.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "244119be511df06c",
-  "name" : "warns or sanitizes forbidden characters in service name",
-  "fullName" : "Services Management - Validation Flows warns or sanitizes forbidden characters in service name",
-  "historyId" : "uid-1772948941771-66",
+  "uid" : "31fdeda4131005fa",
+  "name" : "displays service details correctly after creation",
+  "fullName" : "Services Management - Normal Flows displays service details correctly after creation",
+  "historyId" : "uid-1772948978422-997",
   "time" : {
-    "start" : 1772948938954,
-    "stop" : 1772948941771,
-    "duration" : 2817
+    "start" : 1772948966620,
+    "stop" : 1772948978422,
+    "duration" : 11802
   },
   "status" : "failed",
   "flaky" : false,
@@ -37,6 +37,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "244119be511df06c.json",
+  "source" : "31fdeda4131005fa.json",
   "parameterValues" : [ ]
 }

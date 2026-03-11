@@ -1,14 +1,14 @@
 {
-  "uid" : "d77251405c1a8d46",
-  "name" : "creates a new route via service details page",
-  "fullName" : "Routes Management - Normal Flows creates a new route via service details page",
-  "historyId" : "uid-1772948872451-854",
+  "uid" : "1058accec719355d",
+  "name" : "shows validation when required fields missing",
+  "fullName" : "Services Management - Error Flows shows validation when required fields missing",
+  "historyId" : "uid-1772948945319-116",
   "time" : {
-    "start" : 1772948854283,
-    "stop" : 1772948872451,
-    "duration" : 18168
+    "start" : 1772948944532,
+    "stop" : 1772948945319,
+    "duration" : 787
   },
-  "status" : "failed",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,13 +30,9 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d77251405c1a8d46.json",
+  "source" : "1058accec719355d.json",
   "parameterValues" : [ ]
 }

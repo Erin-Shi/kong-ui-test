@@ -1,12 +1,12 @@
 {
-  "uid" : "6e79cfe942b8be3a",
-  "name" : "creates a new route and shows it in the list",
-  "fullName" : "Routes Management - Normal Flows creates a new route and shows it in the list",
-  "historyId" : "uid-1772948851370-73",
+  "uid" : "70eb911c9946936e",
+  "name" : "generates allure-results artifacts",
+  "fullName" : "Allure Smoke Test generates allure-results artifacts",
+  "historyId" : "uid-1772948838945-706",
   "time" : {
-    "start" : 1772948849374,
-    "stop" : 1772948851370,
-    "duration" : 1996
+    "start" : 1772948838883,
+    "stop" : 1772948838945,
+    "duration" : 62
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6e79cfe942b8be3a.json",
+  "source" : "70eb911c9946936e.json",
   "parameterValues" : [ ]
 }

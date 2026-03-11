@@ -1,12 +1,12 @@
 {
-  "uid" : "dcac7e4d28b05948",
-  "name" : "smoke-test-valid",
-  "fullName" : "Allure Smoke Test.smoke-test-valid",
-  "historyId" : "uid-1772948838922-861",
+  "uid" : "ded931eac5066d6e",
+  "name" : "creates a service with both name and tags empty and receives auto-generated name",
+  "fullName" : "Services Management - Normal Flows creates a service with both name and tags empty and receives auto-generated name",
+  "historyId" : "uid-1772948918202-676",
   "time" : {
-    "start" : 1772948838923,
-    "stop" : 1772948838924,
-    "duration" : 1
+    "start" : 1772948915439,
+    "stop" : 1772948918202,
+    "duration" : 2763
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,6 +16,9 @@
   "labels" : [ {
     "name" : "framework",
     "value" : "cypress"
+  }, {
+    "name" : "generatedBy",
+    "value" : "fallback"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -30,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "dcac7e4d28b05948.json",
+  "source" : "ded931eac5066d6e.json",
   "parameterValues" : [ ]
 }

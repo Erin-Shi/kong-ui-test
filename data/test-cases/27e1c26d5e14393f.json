@@ -1,12 +1,12 @@
 {
-  "uid" : "54f7b8a80fd1ac43",
-  "name" : "creates a new service and shows it in the list",
-  "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
-  "historyId" : "uid-1772948965760-642",
+  "uid" : "27e1c26d5e14393f",
+  "name" : "cancels add service operation without creating",
+  "fullName" : "Services Management - Normal Flows cancels add service operation without creating",
+  "historyId" : "uid-1772948994829-542",
   "time" : {
-    "start" : 1772948963372,
-    "stop" : 1772948965760,
-    "duration" : 2388
+    "start" : 1772948993181,
+    "stop" : 1772948994829,
+    "duration" : 1648
   },
   "status" : "passed",
   "flaky" : false,
@@ -33,6 +33,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "54f7b8a80fd1ac43.json",
+  "source" : "27e1c26d5e14393f.json",
   "parameterValues" : [ ]
 }

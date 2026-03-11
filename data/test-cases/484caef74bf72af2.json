@@ -1,14 +1,14 @@
 {
-  "uid" : "89bba36ac5fafcc2",
-  "name" : "deletes a service from its detail view",
-  "fullName" : "Services Management - Normal Flows deletes a service from its detail view",
-  "historyId" : "uid-1772948913116-940",
+  "uid" : "484caef74bf72af2",
+  "name" : "creates a new service and shows it in the list",
+  "fullName" : "Services Management - Normal Flows creates a new service and shows it in the list",
+  "historyId" : "uid-1772948965760-642",
   "time" : {
-    "start" : 1772948900065,
-    "stop" : 1772948913116,
-    "duration" : 13051
+    "start" : 1772948963372,
+    "stop" : 1772948965760,
+    "duration" : 2388
   },
-  "status" : "failed",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
@@ -30,13 +30,9 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "89bba36ac5fafcc2.json",
+  "source" : "484caef74bf72af2.json",
   "parameterValues" : [ ]
 }
