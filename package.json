@@ -17,7 +17,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.38.0",
     "cypress": "^15.11.0",
-    "@shelex/cypress-allure-plugin": "^2.38.0"
+    "eslint": "^10.0.3"
   }
 }
