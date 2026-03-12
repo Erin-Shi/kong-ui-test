@@ -1,0 +1,252 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "generates allure-results artifacts @full",
+    "uid" : "6f75e6a3cf1f7f89",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281936907,
+      "stop" : 1773281937019,
+      "duration" : 112
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "creates a new route and shows it in the list @route @critical @full",
+    "uid" : "f411d0062fe58ac9",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281938786,
+      "stop" : 1773281943659,
+      "duration" : 4873
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "creates a new route via service details page @route @critical @full",
+    "uid" : "eb1bd10604495b30",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281943856,
+      "stop" : 1773281953400,
+      "duration" : 9544
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "deletes a route from route list in overview page @route @full",
+    "uid" : "5cd16a0a3e4c1726",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281955194,
+      "stop" : 1773281959193,
+      "duration" : 3999
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "shows validation when required fields missing @route @full",
+    "uid" : "479d7860dbd3e2ab",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281961085,
+      "stop" : 1773281962442,
+      "duration" : 1357
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "prevents duplicate route creation @route @full",
+    "uid" : "7588ebd5a8d6d30b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281962506,
+      "stop" : 1773281966807,
+      "duration" : 4301
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "placeholder param validation @route @full",
+    "uid" : "f74bb4a73fce418f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281968523,
+      "stop" : 1773281969726,
+      "duration" : 1203
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "displays route details correctly after creation @route @full",
+    "uid" : "ec592f17fbe47730",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281971524,
+      "stop" : 1773281975026,
+      "duration" : 3502
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "placeholder for update tests @route @full",
+    "uid" : "e638f69c527aa3b2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281976659,
+      "stop" : 1773281976678,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "creates a new service and shows it in the list @critical @service @full",
+    "uid" : "a53b5b524457ca01",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281979049,
+      "stop" : 1773281983137,
+      "duration" : 4088
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "creates a service with both name and tags empty and receives auto-generated name @critical @service @full",
+    "uid" : "b97a6b2fc7f947e4",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281983179,
+      "stop" : 1773281985871,
+      "duration" : 2692
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "deletes a service from its overview view @critical @service @full",
+    "uid" : "600b9cd8ff6b29e3",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281987641,
+      "stop" : 1773281991872,
+      "duration" : 4231
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "shows validation when required fields missing @service @full",
+    "uid" : "f1b3277fbb5e3351",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281993687,
+      "stop" : 1773281994862,
+      "duration" : 1175
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "prevents duplicate service creation @service @full",
+    "uid" : "ce57c0382fc820a9",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281994906,
+      "stop" : 1773281999468,
+      "duration" : 4562
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "prevents deleting a service that has associated routes @service @full",
+    "uid" : "bfc9d8d8da1d20d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773281999640,
+      "stop" : 1773282008016,
+      "duration" : 8376
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "warns or sanitizes forbidden characters in service name @service @full",
+    "uid" : "6dab33cb35296f0a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773282009709,
+      "stop" : 1773282011336,
+      "duration" : 1627
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "validates URL with spaces or control characters @service @full",
+    "uid" : "6ef812c20c2c1b9d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773282011381,
+      "stop" : 1773282012452,
+      "duration" : 1071
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "displays service details correctly after creation @critical @service @full",
+    "uid" : "34ee6d6efc3dcdbe",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773282014197,
+      "stop" : 1773282019400,
+      "duration" : 5203
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "placeholder for update tests @service @full",
+    "uid" : "b0b20ff0182b4806",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1773282021190,
+      "stop" : 1773282022304,
+      "duration" : 1114
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

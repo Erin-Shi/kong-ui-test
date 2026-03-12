@@ -1,0 +1,35 @@
+{
+  "uid" : "f1b3277fbb5e3351",
+  "name" : "shows validation when required fields missing @service @full",
+  "fullName" : "Services Management - Error Flows shows validation when required fields missing @service @full",
+  "historyId" : "uid-1773281994862-451",
+  "time" : {
+    "start" : 1773281993687,
+    "stop" : 1773281994862,
+    "duration" : 1175
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f1b3277fbb5e3351.json",
+  "parameterValues" : [ ]
+}

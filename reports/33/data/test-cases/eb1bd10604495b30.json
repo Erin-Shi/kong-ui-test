@@ -1,0 +1,35 @@
+{
+  "uid" : "eb1bd10604495b30",
+  "name" : "creates a new route via service details page @route @critical @full",
+  "fullName" : "Routes - Create creates a new route via service details page @route @critical @full",
+  "historyId" : "uid-1773281953400-449",
+  "time" : {
+    "start" : 1773281943856,
+    "stop" : 1773281953400,
+    "duration" : 9544
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb1bd10604495b30.json",
+  "parameterValues" : [ ]
+}

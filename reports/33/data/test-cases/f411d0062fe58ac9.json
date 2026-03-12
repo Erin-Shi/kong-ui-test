@@ -1,0 +1,35 @@
+{
+  "uid" : "f411d0062fe58ac9",
+  "name" : "creates a new route and shows it in the list @route @critical @full",
+  "fullName" : "Routes - Create creates a new route and shows it in the list @route @critical @full",
+  "historyId" : "uid-1773281943659-899",
+  "time" : {
+    "start" : 1773281938786,
+    "stop" : 1773281943659,
+    "duration" : 4873
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f411d0062fe58ac9.json",
+  "parameterValues" : [ ]
+}
