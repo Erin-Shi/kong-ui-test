@@ -13,8 +13,8 @@ Lightweight Cypress test suite for Kong UI with Allure reporting and GitHub Page
 
 The repository contains E2E test specs under `cypress/e2e/` (examples):
 
-- `service-create.cy.js` ¡ª service creation scenarios
-- `route-error.cy.js` ¡ª route/error handling scenarios
+- `service-create.cy.js` â€” service creation scenarios
+- `route-error.cy.js` â€” route/error handling scenarios
 
 (See `cypress/e2e/` for the full list in this repo.)
 
@@ -89,7 +89,7 @@ it('creates service @service @smoke', () => { ... })
 it('creates service', { tags: ['@service', '@smoke'] }, () => { ... })
 ```
 
-Running by tag ¡ª two options are provided in this repo:
+Running by tag Â¡Âª two options are provided in this repo:
 
 1) Preferred: use `scripts/run-by-tag.js` (defaults to scanning specs and running only matching spec files)
 
@@ -153,7 +153,7 @@ Workflow: `.github/workflows/cypress.yml`
 - Steps: checkout, setup node, start app (docker compose), run Cypress, prepare Allure results, generate report, deploy to `gh-pages`, and upload artifacts.
 - The workflow creates `allure-report` and pushes it to `gh-pages/reports/${{ github.run_number }}`.
 
-Ensure Pages is enabled (Settings ¡ú Pages) and targeting the `gh-pages` branch for the site to be visible.
+Ensure Pages is enabled (Settings --> Pages) and targeting the `gh-pages` branch for the site to be visible.
 
 ## Troubleshooting
 
@@ -163,10 +163,10 @@ Ensure Pages is enabled (Settings ¡ú Pages) and targeting the `gh-pages` branch 
 
 ## Files you may want to inspect
 
-- `cypress/support/e2e.js` ¡ª support hooks, Allure plugin registration, optional grep require, fallback writer
-- `cypress.config.js` ¡ª config and Node event setup, Allure results directory and debug tasks
-- `.github/workflows/cypress.yml` ¡ª CI workflow that runs tests and deploys the Allure report
-- `package.json` ¡ª npm scripts: `cypress:run:ci`, `cypress:run:ci:allure`, `allure:generate`, `allure:open`, `cypress:run:tag`
+- `cypress/support/e2e.js` â€” support hooks, Allure plugin registration, optional grep require, fallback writer
+- `cypress.config.js` â€” config and Node event setup, Allure results directory and debug tasks
+- `.github/workflows/cypress.yml` â€” CI workflow that runs tests and deploys the Allure report
+- `package.json` â€” npm scripts: `cypress:run:ci`, `cypress:run:ci:allure`, `allure:generate`, `allure:open`, `cypress:run:tag`
 
 ## Contributing
 
