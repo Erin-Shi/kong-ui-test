@@ -1,0 +1,35 @@
+{
+  "uid" : "1b7d1672cf2e1192",
+  "name" : "displays service details correctly after creation @critical @service @full",
+  "fullName" : "Services - Retrieve displays service details correctly after creation @critical @service @full",
+  "historyId" : "uid-1773717763409-502",
+  "time" : {
+    "start" : 1773717758075,
+    "stop" : 1773717763409,
+    "duration" : 5334
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b7d1672cf2e1192.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "1590ae6636d2a026",
+  "name" : "shows validation when required fields missing @route @full",
+  "fullName" : "Routes Management - Error Flows shows validation when required fields missing @route @full",
+  "historyId" : "uid-1773717705007-854",
+  "time" : {
+    "start" : 1773717703678,
+    "stop" : 1773717705007,
+    "duration" : 1329
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1590ae6636d2a026.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "uid" : "a74149519453cf00",
+  "name" : "placeholder param validation @route @full",
+  "fullName" : "Routes - Parameter Validation placeholder param validation @route @full",
+  "historyId" : "uid-1773717712390-200",
+  "time" : {
+    "start" : 1773717711221,
+    "stop" : 1773717712390,
+    "duration" : 1169
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a74149519453cf00.json",
+  "parameterValues" : [ ]
+}
